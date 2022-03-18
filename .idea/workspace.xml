@@ -4,6 +4,7 @@
     <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/itaewon/barbeque.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/itaewon/barbeque.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/itaewon/food.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/itaewon/food.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <updated>1647522795979</updated>
       <workItem from="1647522797240" duration="1152000" />
       <workItem from="1647523959503" duration="350000" />
-      <workItem from="1647557601079" duration="13436000" />
+      <workItem from="1647557601079" duration="13573000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647617330314</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init commit">
+      <created>1647617550634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647617550634</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
