@@ -11,14 +11,14 @@ export default function Food() {
       name: "ITAEWON DONKATSU",
       price: "25",
       desc: (
-        <div className="italic">
+        <div className="italic pb-2">
           <div>
             Breaded - Deep fried pork cutlet serve with rice and shredded
             cabbage.
           </div>
           <div>
             (Daging yang dipipihkan dibalut tepung roti dan digoreng kering
-            disajikan dengan nasi dan potongan kol.)
+            disajikan dengan nasi dan potongan kol)
           </div>
         </div>
       ),
@@ -28,7 +28,7 @@ export default function Food() {
       name: "SWEET & SPICY BULGOGI",
       price: "25",
       desc: (
-        <div className="italic">
+        <div className="italic pb-2">
           <div>
             Pork chops are broiled with a glaze of soy sauce, chili, and sugar
             serve with rice and shredded cabbage
@@ -45,14 +45,14 @@ export default function Food() {
       name: "SALTY & SOUR BULGOGI",
       price: "25",
       desc: (
-        <div className="italic">
+        <div className="italic pb-2">
           <div>
             Marinated pork chop with soy sauce, apple juice, minced ginger and
             garlic serve with rice and shredded cabbage.
           </div>
           <div>
             (Potongan daging yang dimarinasi dengan kecap asin, jus apel, jahe
-            dan bawang putih halus disajikan dengan nasi dan potongan kol.)
+            dan bawang putih halus disajikan dengan nasi dan potongan kol)
           </div>
         </div>
       ),
@@ -62,9 +62,9 @@ export default function Food() {
       name: "CHICKEN KATSU",
       price: "25",
       desc: (
-        <div className="italic">
+        <div className="italic pb-2">
           <div>Donkatsu with chicken instead.</div>
-          <div>(Donkatsu menggunakan daging ayam.)</div>
+          <div>(Donkatsu menggunakan daging ayam)</div>
         </div>
       ),
     },
@@ -73,14 +73,14 @@ export default function Food() {
       name: "YANGNYEOM CHICKEN",
       price: "25",
       desc: (
-        <div className="italic">
+        <div className="italic pb-2">
           <div>
             Korean fried chicken seasoned with sweet and spicy sauce of
             gochujang, gochugaru, garlic, and sugar serve with rice.
           </div>
           <div>
             (Ayam goreng korea dibalut dengan saus pedas manis yang terbuat dari
-            gochujang dan gochugaru disajikan dengan nasi.)
+            gochujang dan gochugaru disajikan dengan nasi)
           </div>
         </div>
       ),
@@ -90,9 +90,9 @@ export default function Food() {
       name: "DUBU-JJIGAE",
       price: "18",
       desc: (
-        <div className="italic">
+        <div className="italic pb-2">
           <div>Korean Tofu stew.</div>
-          <div>(Sup Tahu ala Korea.)</div>
+          <div>(Sup Tahu ala Korea)</div>
         </div>
       ),
     },
@@ -103,7 +103,7 @@ export default function Food() {
       desc: (
         <div className="italic">
           <div>Kimchi stew.</div>
-          <div>(Sup Kimchi ala Korea.)</div>
+          <div>(Sup Kimchi ala Korea)</div>
         </div>
       ),
     },
