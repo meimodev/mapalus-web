@@ -31,7 +31,7 @@ export default function Bargbeque() {
       name: "PAKET 4 ORANG",
       price: "150",
       desc: (
-          <div className="flex italic pb-3">
+        <div className="flex italic pb-3">
           <div className="flex-grow-0 pr-3">Include</div>
           <div className="flex-grow">
             <div className="flex-col">
@@ -51,7 +51,7 @@ export default function Bargbeque() {
       name: "PAKET 6 ORANG",
       price: "150",
       desc: (
-          <div className="flex italic pb-3">
+        <div className="flex italic pb-3">
           <div className="flex-grow-0 pr-3">Include</div>
           <div className="flex-grow">
             <div className="flex-col">
@@ -68,9 +68,9 @@ export default function Bargbeque() {
     },
 
     { type: "head", name: "GRILL ADD-ON" },
-    { type: "item", name: "SAMGYEOPSAL 1 pax", price: "20" },
-    { type: "item", name: "PORK HAM 1 pax", price: "20" },
-    { type: "item", name: "MARINATED CHICKED", price: "20" },
+    { type: "item", name: "SAMGYEOPSAL 1 pax", price: "30" },
+    { type: "item", name: "PORK HAM 1 pax", price: "30" },
+    { type: "item", name: "MARINATED CHICKEN", price: "30" },
     { type: "item", name: "KIMCHI", price: "FREE" },
   ];
 

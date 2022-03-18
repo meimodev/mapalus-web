@@ -5,8 +5,8 @@ const Snack = () => {
     { type: "title", name: "Snack & Kimbab" },
 
     { type: "head", name: "SNACK" },
-    { type: "item", name: "ITAEWON PREMIUM COFFEE", price: "25" },
-    { type: "item", name: "CHOCO COFFEE", price: "20" },
+    { type: "item", name: "ITAEWON PREMIUM CROFFLE", price: "25" },
+    { type: "item", name: "CHOCO CROFFLE", price: "20" },
     { type: "item", name: "OKONOMIYAKI", price: "20" },
     { type: "item", name: "FRENCH FRIES", price: "15" },
     { type: "item", name: "ONION RINGS", price: "15" },
