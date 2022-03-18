@@ -11,7 +11,7 @@ export default function Bargbeque() {
       name: "PAKET 2 ORANG",
       price: "80",
       desc: (
-        <div className="flex ">
+        <div className="flex italic">
           <div className="flex-grow-0 pr-3">Include</div>
           <div className="flex-grow">
             <div className="flex-col">
@@ -31,7 +31,7 @@ export default function Bargbeque() {
       name: "PAKET 4 ORANG",
       price: "150",
       desc: (
-        <div className="flex ">
+        <div className="flex italic">
           <div className="flex-grow-0 pr-3">Include</div>
           <div className="flex-grow">
             <div className="flex-col">
@@ -51,7 +51,7 @@ export default function Bargbeque() {
       name: "PAKET 6 ORANG",
       price: "150",
       desc: (
-        <div className="flex ">
+        <div className="flex italic">
           <div className="flex-grow-0 pr-3">Include</div>
           <div className="flex-grow">
             <div className="flex-col">
