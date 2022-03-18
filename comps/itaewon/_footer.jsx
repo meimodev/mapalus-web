@@ -5,7 +5,7 @@ const FooterDefault = () => {
     <footer>
       <div className="">
         <a
-          href="https://www.google.com"
+          href="https://www.mapalusindonesia.com"
           target="_blank"
           rel="noopener noreferrer"
         >

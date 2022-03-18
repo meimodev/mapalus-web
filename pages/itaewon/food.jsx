@@ -109,13 +109,16 @@ export default function Food() {
     },
 
     { type: "head", name: "INDONESIAN CUISINE" },
-    { type: "item", name: "ITAEWON DONKATSU", price: "25" },
-    { type: "item", name: "SWEET & SPICY BULGOGI", price: "25" },
-    { type: "item", name: "SALTY & SOUR BULGOGI", price: "25" },
-    { type: "item", name: "CHICKEN KATSU", price: "25" },
-    { type: "item", name: "YANGNYEOM CHICKEN", price: "25" },
-    { type: "item", name: "DUBU-JJIGAE", price: "18" },
-    { type: "item", name: "KIMCHI-JJIGAE", price: "18" },
+    { type: "item", name: "NASI GORENG DONKATSU", price: "20" },
+    { type: "item", name: "NASI GORENG BA'", price: "20" },
+    { type: "item", name: "NASI GORENG AYAM", price: "20" },
+    { type: "item", name: "NASI GORENG HONGKONG", price: "20" },
+    { type: "item", name: "NASI GILA BA'", price: "18" },
+    { type: "item", name: "NASI GILA AYAM", price: "18" },
+    { type: "item", name: "MIE KUAH BA'", price: "15" },
+    { type: "item", name: "MIE GORENG BA'", price: "18" },
+    { type: "item", name: "MIE GORENG AYAM", price: "18" },
+    { type: "item", name: "AYAM GEPREK", price: "23" },
   ];
 
   return <Page items={items} headClassName="text-kland" />;
