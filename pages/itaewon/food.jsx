@@ -109,7 +109,7 @@ export default function Food() {
     },
 
     { type: "head", name: "INDONESIAN CUISINE" },
-    { type: "item", name: "NASI GORENG DONKATSU", price: "20" },
+    { type: "item", name: "NASI GORENG DONKATSU", price: "28" },
     { type: "item", name: "NASI GORENG BA'", price: "20" },
     { type: "item", name: "NASI GORENG AYAM", price: "20" },
     { type: "item", name: "NASI GORENG HONGKONG", price: "20" },
