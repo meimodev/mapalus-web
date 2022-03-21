@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/itaewon/food.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/itaewon/food.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,8 @@
       <workItem from="1647522797240" duration="1152000" />
       <workItem from="1647523959503" duration="350000" />
       <workItem from="1647557601079" duration="16608000" />
+      <workItem from="1647827022648" duration="686000" />
+      <workItem from="1647866530459" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>

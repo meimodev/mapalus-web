@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         bengasi: ["BengasiBold"],
+        poppins: ["Poppins"],
       },
       screens: {
         xs: { min: "100px", max: "370px" },
@@ -14,6 +15,7 @@ module.exports = {
       colors: {
         itaewon: "#F59E0B",
         kland: "#14B8A6",
+        mapalus: "#ffb600",
       },
     },
   },
