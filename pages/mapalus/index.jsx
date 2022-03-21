@@ -29,7 +29,7 @@ const Mapalus = () => {
                 <span className="font-bengasi">
                   HARGA PASAR - ANTAR DIRUMAH
                 </span>
-                <div className="border-4 border-mapalus my-4 rounded-lg "/>
+                <div className="border-4 border-mapalus my-4 rounded-lg " />
 
                 <div className="flex flex-col ">
                   <span>Pesan melalui aplikasi</span>
@@ -48,17 +48,17 @@ const Mapalus = () => {
                 <div className="flex flex-col my-4">
                   <span>Pesan melalui media sosial</span>
                   <_BuildButton
-                    href="https://www.google.com"
+                    href="https://wa.me/+6289525699078"
                     title="0895 2569 9078"
                     icon={<i className="lab la-whatsapp text-3xl" />}
                   />
                   <_BuildButton
-                    href="https://www.google.com"
+                    href="https://www.facebook.com/minahasamapalus"
                     title="Mapalus Minahasa"
                     icon={<i className="lab la-facebook text-3xl" />}
                   />
                   <_BuildButton
-                    href="https://www.google.com"
+                    href="https://www.instagram.com/mapalusminahasa"
                     title="@mapalus.minahasa"
                     icon={<i className="lab la-instagram text-3xl" />}
                   />
