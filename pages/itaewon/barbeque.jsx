@@ -49,7 +49,7 @@ export default function Bargbeque() {
     {
       type: "item",
       name: "PAKET 6 ORANG",
-      price: "150",
+      price: "230",
       desc: (
         <div className="flex italic pb-3">
           <div className="flex-grow-0 pr-3">Include</div>
