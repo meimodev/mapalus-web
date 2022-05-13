@@ -2,11 +2,16 @@ import MetaDefault from "../../comps/mapalus/_meta";
 import { Fade } from "react-awesome-reveal";
 
 const Mapalus = () => {
-  const _BuildButton = ({ title, icon, href }) => (
-    <a href={href} target="_blank" rel="noreferrer">
-      <div className="flex gap-2 items-center border p-2 my-2 rounded-lg">
+  const _BuildButton = ({ title, icon, href, available }) => (
+    <a href={available ? href : null} target="_blank" rel="noreferrer">
+      <div className="flex gap-3 items-center border p-2 px-5 my-2 rounded-lg">
         <div> {icon}</div>
-        <div>{title}</div>
+        <div>
+          <div className="text-left text-lg">{title}</div>
+          {!available ? (
+            <p className="text-xs text-gray-400 text-left">coming soon</p>
+          ) : null}
+        </div>
       </div>
     </a>
   );
@@ -34,33 +39,38 @@ const Mapalus = () => {
                 <div className="flex flex-col ">
                   <span>Pesan melalui aplikasi</span>
                   <_BuildButton
-                    href="https://www.google.com"
+                    href="https://www.apple.com"
                     title="App Store"
-                    icon={<i className="lab la-apple text-3xl" />}
+                    icon={<i className="lab la-apple text-4xl" />}
+                    available={false}
                   />
                   <_BuildButton
-                    href="https://www.google.com"
+                    href="https://play.google.com/store/apps/details?id=com.meimodev.mapalus"
                     title="Google Play"
-                    icon={<i className="lab la-google-play text-3xl" />}
+                    icon={<i className="lab la-google-play text-4xl" />}
+                    available={true}
                   />
                 </div>
 
                 <div className="flex flex-col my-4">
                   <span>Pesan melalui media sosial</span>
                   <_BuildButton
-                    href="https://wa.me/+6289525699078"
+                    href="https://api.whatsapp.com/send?phone=6289525699078&text=Halo,%20mo%20ba%20pesan%20bagimana%20kang?"
                     title="0895 2569 9078"
-                    icon={<i className="lab la-whatsapp text-3xl" />}
+                    icon={<i className="lab la-whatsapp text-4xl" />}
+                    available={true}
                   />
                   <_BuildButton
                     href="https://www.facebook.com/minahasamapalus"
                     title="Mapalus Minahasa"
-                    icon={<i className="lab la-facebook text-3xl" />}
+                    icon={<i className="lab la-facebook text-4xl" />}
+                    available={true}
                   />
                   <_BuildButton
                     href="https://www.instagram.com/mapalusminahasa"
                     title="@mapalus.minahasa"
-                    icon={<i className="lab la-instagram text-3xl" />}
+                    icon={<i className="lab la-instagram text-4xl" />}
+                    available={true}
                   />
                 </div>
               </div>

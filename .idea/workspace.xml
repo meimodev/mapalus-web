@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="added /privacy-policy to complaint the apps in each respective store">
-      <change afterPath="$PROJECT_DIR$/pages/privacy-policy/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/itaewon/barbeque.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/itaewon/barbeque.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,8 @@
       <workItem from="1647827022648" duration="686000" />
       <workItem from="1647866530459" duration="1569000" />
       <workItem from="1649935231512" duration="32000" />
-      <workItem from="1652403836134" duration="1762000" />
+      <workItem from="1652403836134" duration="2104000" />
+      <workItem from="1652420177829" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647871724579</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added /privacy-policy to complaint the apps in each respective store">
+      <created>1652409449813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652409449813</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
