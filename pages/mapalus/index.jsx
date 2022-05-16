@@ -36,7 +36,7 @@ const Mapalus = () => {
                 </span>
                 <div className="border-4 border-mapalus my-4 rounded-lg " />
 
-                <div className="flex flex-col ">
+                <div className="flex flex-col">
                   <span>Pesan melalui aplikasi</span>
                   <_BuildButton
                     href="https://www.apple.com"
