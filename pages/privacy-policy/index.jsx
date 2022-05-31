@@ -35,7 +35,7 @@ const Privacy = () => {
             <img src="/mapalus.svg" alt="Mapalus logo" />
           </div>
           <div className="flex font-poppins items-center justify-end">
-            <h1 className="text-xs">2022 |</h1>
+            <h1 className="text-xs">{new Date().getFullYear()} |</h1>
             <h1 className="px-2 font-bold">MEIMO</h1>
           </div>
         </div>
@@ -50,7 +50,10 @@ const Privacy = () => {
 
         <h1 className="font-bold text-4xl py-6">Support</h1>
 
-        <Paragraph>If you have anything to ask about this app, feel free to drop us a line ;)</Paragraph>
+        <Paragraph>
+          If you have anything to ask about this app, feel free to drop us a
+          line ;)
+        </Paragraph>
 
         <Heading2>Contact Us</Heading2>
         <List>

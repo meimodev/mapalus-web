@@ -5,13 +5,13 @@ const Support = () => {
     <h2 className="font-bold text-xl py-4">{children}</h2>
   );
 
-  const Heading3 = ({ children }) => (
-    <h3 className="font-bold text-xl py-4">{children}</h3>
-  );
+  // const Heading3 = ({ children }) => (
+  //   <h3 className="font-bold text-xl py-4">{children}</h3>
+  // );
 
-  const Heading4 = ({ children }) => (
-    <h4 className="font-bold text-md py-1">{children}</h4>
-  );
+  // const Heading4 = ({ children }) => (
+  //   <h4 className="font-bold text-md py-1">{children}</h4>
+  // );
 
   const Paragraph = ({ children }) => <p className="py-2">{children}</p>;
 
