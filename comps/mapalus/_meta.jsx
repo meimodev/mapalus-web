@@ -1,9 +1,9 @@
 import Meta from "../Meta";
 
-const MetaDefault = () => {
+const MetaDefault = ({title = ''}) => {
   return (
     <Meta
-      title="Mapalus | Pasar online minahasa"
+      title={title? title:"Mapalus | Pasar online minahasa"}
       description="Pasar online minahasa, manado, amurang, airmadidi, tondano, tomohon"
       color="#ffb600"
     />
