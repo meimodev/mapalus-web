@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import MetaDefault from "../../comps/mapalus/_meta";
 
 const Support = () => {
