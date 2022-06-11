@@ -19,7 +19,7 @@ const Mapalus = () => {
   return (
     <div>
       <MetaDefault />
-      
+
       <Fade cascade triggerOnce>
         <div>
           <main>
@@ -30,9 +30,7 @@ const Mapalus = () => {
                 </div>
 
                 <span>Pasar online</span>
-                <span className="font-bengasi">
-                  HARGA PASAR - ANTAR DIRUMAH
-                </span>
+                <span className="font-bengasi">HARGA PASAR - ANTAR RUMAH</span>
                 <div className="border-4 border-mapalus my-4 rounded-lg " />
 
                 <div className="flex flex-col">
@@ -51,7 +49,7 @@ const Mapalus = () => {
                   />
                 </div>
 
-                <div className="flex flex-col my-4">
+                <div className="flex flex-col mt-4">
                   <span>Pesan melalui media sosial</span>
                   <_BuildButton
                     href="https://api.whatsapp.com/send?phone=6289525699078&text=Halo,%20mo%20ba%20pesan%20bagimana%20kang?"
@@ -72,19 +70,18 @@ const Mapalus = () => {
                     available={true}
                   />
                 </div>
-                <div className="flex flex-col my-4">
-                  <span>Lihat Daftar Produk</span>
-                  
+                <div className="flex flex-col mb-4">
                   <Link href="/mapalus/products" rel="noreferrer">
-                  <div className="flex gap-3 items-center border p-2 px-5 my-2 rounded-lg cursor-pointer">
-                    <div> <i className="las la-list-alt text-4xl" /></div>
-                    <div>
-                      <div className="text-left text-lg">Produk-produk</div>
-                      
+                    <div className="flex gap-3 items-center border p-2 px-5 my-2 rounded-lg cursor-pointer">
+                      <div>
+                        {" "}
+                        <i className="las la-list-alt text-4xl" />
+                      </div>
+                      <div>
+                        <div className="text-left text-">150+ Bahan Pasar</div>
+                      </div>
                     </div>
-                  </div>
                   </Link>
-                 
                 </div>
               </div>
             </div>
