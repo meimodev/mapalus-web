@@ -1,5 +1,6 @@
 import MetaDefault from "../../comps/mapalus/_meta";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 const Mapalus = () => {
   const _BuildButton = ({ title, icon, href, available }) => (
@@ -18,9 +19,7 @@ const Mapalus = () => {
   return (
     <div>
       <MetaDefault />
-
-      <div>This is a mapalus page</div>
-
+      
       <Fade cascade triggerOnce>
         <div>
           <main>
@@ -39,14 +38,14 @@ const Mapalus = () => {
                 <div className="flex flex-col">
                   <span>Pesan melalui aplikasi</span>
                   <_BuildButton
-                    href="https://www.apple.com"
+                    href="https://apps.apple.com/us/app/mapalus/id1626796752"
                     title="App Store"
                     icon={<i className="lab la-apple text-4xl" />}
-                    available={false}
+                    available={true}
                   />
                   <_BuildButton
                     href="https://play.google.com/store/apps/details?id=com.meimodev.mapalus"
-                    title="Google Play"
+                    title="Play Store"
                     icon={<i className="lab la-google-play text-4xl" />}
                     available={true}
                   />
@@ -72,6 +71,20 @@ const Mapalus = () => {
                     icon={<i className="lab la-instagram text-4xl" />}
                     available={true}
                   />
+                </div>
+                <div className="flex flex-col my-4">
+                  <span>Lihat Daftar Produk</span>
+                  
+                  <Link href="/mapalus/products" rel="noreferrer">
+                  <div className="flex gap-3 items-center border p-2 px-5 my-2 rounded-lg cursor-pointer">
+                    <div> <i className="las la-list-alt text-4xl" /></div>
+                    <div>
+                      <div className="text-left text-lg">Produk-produk</div>
+                      
+                    </div>
+                  </div>
+                  </Link>
+                 
                 </div>
               </div>
             </div>
