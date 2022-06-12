@@ -28,14 +28,14 @@ export default function CollapsibleDiv({
         {title}
         <div>
           {isExpanded ? (
-            <i className="las la-caret-up text-2xl"></i>
+            <i className="las la-caret-up text-2xl "></i>
           ) : (
             <i className="las la-caret-down text-2xl"></i>
           )}
         </div>
       </div>
       <div {...getCollapseProps()}>
-        <Fade cascade triggerOnce duration={500}>
+        <Fade cascade duration={400}>
           {children}
         </Fade>
         {paddingBottom ? <div className="h-12"></div> : <div></div>}

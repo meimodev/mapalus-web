@@ -1,4 +1,5 @@
-import MetaDefault from "../../comps/mapalus/_meta";
+/* eslint-disable @next/next/no-img-element */
+import { _BuildMeta } from ".";
 import { Fade } from "react-awesome-reveal";
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
@@ -79,21 +80,19 @@ const Products = ({ data, time }) => {
   };
   return (
     <div className="">
-      <MetaDefault />
-      <Fade cascade triggerOnce>
-        <main>
-          <div className=" flex justify-center items-center">
-            <div className="text-gray-100 text-center text-sm flex flex-col font-poppins">
-              <div className="px-4 pb-2 mt-8">
-                <img src={"/mapalus.svg"} alt="Mapalus Logo" />
-              </div>
+      <_BuildMeta />
 
-              <span>Pasar online</span>
-              <span className="font-bengasi mt-2">
-                HARGA PASAR - ANTAR RUMAH
-              </span>
-              <div className="border-b-2 border-mapalus my-4 rounded-lg " />
+      <main>
+        <div className=" flex justify-center items-center">
+          <div className="text-gray-100 text-center text-sm flex flex-col font-poppins">
+            <div className="px-4 pb-2 mt-8">
+              <img src={"/mapalus.svg"} alt="Mapalus Logo" />
+            </div>
 
+            <span>Pasar online</span>
+            <span className="font-bengasi mt-2">HARGA PASAR - ANTAR RUMAH</span>
+            <div className="border-b-2 border-mapalus my-4 rounded-lg " />
+            <Fade cascade triggerOnce>
               <div className="flex flex-col">
                 <div className=" flex flex-col">
                   <span className=" font-bold text-md text-lg">
@@ -110,10 +109,10 @@ const Products = ({ data, time }) => {
                 </div>
                 <div className="pb-20"></div>
               </div>
-            </div>
+            </Fade>
           </div>
-        </main>
-      </Fade>
+        </div>
+      </main>
     </div>
   );
 };

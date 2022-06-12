@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import ListItemButton from "../../comps/ListItemButton";
-import FooterDefault from "../../comps/itaewon/_footer";
+import FooterDefault from "../../comps/FooterDefault";
 import { Fade } from "react-awesome-reveal";
 import Meta from "../../comps/Meta";
 import CollapsibleDiv from "../../comps/CollapsibleDiv";
@@ -22,18 +22,23 @@ export default function Page() {
         title="Esspecto Coffee"
         description="Esspecto Coffee menu list"
         color="#1c1917"
+        image="/esspecto-hori.png"
       />
 
       <Fade cascade triggerOnce>
-        <div className="h-full bg-stone-900 flex flex-col justify-center items-center px-6 text-stone-100 ">
+        <div className="h-full bg-stone-900 flex flex-col justify-center items-center  text-stone-100 ">
           <main className="flex-grow ">
             <div className="flex justify-center items-center">
               <div className="flex-col ">
-                <div className="pt-12 px-12 pb-8 ">
-                  <img src="/esspecto-hori.png" alt="Itaewon x Kland logo" />
+                <div className="pt-12 px-12 pb-8 bg-neutral-100 ">
+                  <img
+                    src="/esspecto-hori.png"
+                    alt="Esspecto coffee logo"
+                    className="drop-shadow-2xl"
+                  />
                 </div>
 
-                <div className="flex flex-col ">
+                <div className="flex flex-col px-6 pt-6">
                   <CollapsibleDiv
                     isActive={true}
                     paddingBottom

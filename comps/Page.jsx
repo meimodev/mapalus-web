@@ -1,4 +1,4 @@
-import MetaDefault from "./itaewon/_meta";
+import { _BuildMeta } from "../pages/itaewon";
 import NavBar from "./NavBar";
 import ListItem from "./ListItem";
 import ListItemHead from "./ListItemHead";
@@ -9,7 +9,7 @@ const Page = ({ items, headClassName, itemClassName }) => {
   return (
     <div>
       <div className="h-full bg-neutral-900">
-        <MetaDefault />
+        <_BuildMeta />
 
         <Fade duration={400} triggerOnce={true}>
           <main>

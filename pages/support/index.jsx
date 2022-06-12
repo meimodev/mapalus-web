@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import MetaDefault from "../../comps/mapalus/_meta";
+import { _BuildMeta } from "../mapalus/index";
 
 const Support = () => {
   const Heading2 = ({ children }) => (
@@ -47,7 +47,7 @@ const Support = () => {
   return (
     <div>
       <div className="bg-white px-12 pt-4 pb-12 font-poppins">
-        <MetaDefault title="Mapalus Support" />
+        <_BuildMeta title="Mapalus | Support" />
 
         <h1 className="font-bold text-4xl py-6">About Support</h1>
 

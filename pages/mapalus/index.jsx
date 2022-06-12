@@ -1,6 +1,18 @@
-import MetaDefault from "../../comps/mapalus/_meta";
+/* eslint-disable @next/next/no-img-element */
+import Meta from "../../comps/Meta";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
+
+export function _BuildMeta({ title }) {
+  return (
+    <Meta
+      title={title ? title : "Mapalus | Pasar online minahasa"}
+      description="Pasar online minahasa, manado, amurang, airmadidi, tondano, tomohon"
+      color="#ffb600"
+      image={"/mapalus.svg"}
+    />
+  );
+}
 
 const Mapalus = () => {
   const _BuildButton = ({ title, icon, href, available }) => (
@@ -18,21 +30,21 @@ const Mapalus = () => {
   );
   return (
     <div>
-      <MetaDefault />
+      <_BuildMeta />
 
-      <Fade cascade triggerOnce>
-        <div>
-          <main>
-            <div className=" flex justify-center items-center">
-              <div className="text-gray-100 text-center text-sm flex flex-col font-poppins">
-                <div className="px-4 pb-2">
-                  <img src={"/mapalus.svg"} alt="Mapalus Logo" />
-                </div>
+      <div>
+        <main>
+          <div className=" flex justify-center items-center">
+            <div className="text-gray-100 text-center text-sm flex flex-col font-poppins my-10">
+              <div className="px-4 pb-2">
+                <img src={"/mapalus.svg"} alt="Mapalus Logo" />
+              </div>
 
-                <span>Pasar online</span>
-                <span className="font-bengasi">HARGA PASAR - ANTAR RUMAH</span>
-                <div className="border-4 border-mapalus my-4 rounded-lg " />
+              <span>Pasar online</span>
+              <span className="font-bengasi">HARGA PASAR - ANTAR RUMAH</span>
+              <div className="border-b-2 border-mapalus mt-2 mb-4 rounded-lg " />
 
+              <Fade cascade triggerOnce>
                 <div className="flex flex-col">
                   <span>Pesan melalui aplikasi</span>
                   <_BuildButton
@@ -70,24 +82,31 @@ const Mapalus = () => {
                     available={true}
                   />
                 </div>
+
                 <div className="flex flex-col mb-4">
-                  <Link href="/mapalus/products" rel="noreferrer">
-                    <div className="flex gap-3 items-center border p-2 px-5 my-2 rounded-lg cursor-pointer">
+                  <a
+                    href="/mapalus/products"
+                    rel="noreferrer"
+                    target="_blank"
+                    passHref
+                  >
+                    <div className="flex gap-3 items-center border border-mapalus p-2 px-5 my-2 rounded-lg cursor-pointer bg-mapalus text-neutral-900 font-bold">
                       <div>
-                        {" "}
                         <i className="las la-list-alt text-4xl" />
                       </div>
                       <div>
-                        <div className="text-left text-">150+ Bahan Pasar</div>
+                        <div className="text-left text-lg">
+                          150+ Bahan Pasar
+                        </div>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
-              </div>
+              </Fade>
             </div>
-          </main>
-        </div>
-      </Fade>
+          </div>
+        </main>
+      </div>
     </div>
   );
 };

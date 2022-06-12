@@ -11,7 +11,7 @@ module.exports = {
         blockLetter: ["blockLetter"],
       },
       screens: {
-        xs: { min: "100px", max: "370px" },
+        xs: "360px",
         ...defaultTheme.screens,
       },
       colors: {
