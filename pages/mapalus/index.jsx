@@ -31,7 +31,6 @@ const Mapalus = () => {
   return (
     <div>
       <_BuildMeta />
-
       <div>
         <main>
           <div className=" flex justify-center items-center">

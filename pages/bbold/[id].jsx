@@ -18,7 +18,7 @@ export default function Pages() {
         THIS IS THE PRODUCT DETAIlL PAGE {id}
       </div>
 
-      <>
+      <div className="flex">
         <Swiper
           speed={1000}
           pagination={{
@@ -31,7 +31,7 @@ export default function Pages() {
           loop={true}
           navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="mySwiper h-[20rem]"
+          className="mySwiper h-[20rem] flex-1"
         >
           <SwiperSlide className="bg-blue-700">Slide 1</SwiperSlide>
           <SwiperSlide className="bg-red-700">Slide 2</SwiperSlide>
@@ -40,7 +40,28 @@ export default function Pages() {
           <SwiperSlide className="bg-pink-700">Slide 5</SwiperSlide>
           <SwiperSlide className="bg-purple-700">Slide 6</SwiperSlide>
         </Swiper>
-      </>
+        <Swiper
+          speed={1000}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          navigation={true}
+          modules={[Pagination, Navigation, Autoplay]}
+          className="mySwiper h-[20rem] flex-1"
+        >
+          <SwiperSlide className="bg-blue-700">Slide 1</SwiperSlide>
+          <SwiperSlide className="bg-red-700">Slide 2</SwiperSlide>
+          <SwiperSlide className="bg-yellow-700">Slide 3</SwiperSlide>
+          <SwiperSlide className="bg-green-700">Slide 4</SwiperSlide>
+          <SwiperSlide className="bg-pink-700">Slide 5</SwiperSlide>
+          <SwiperSlide className="bg-purple-700">Slide 6</SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { _BuildMeta } from "../pages/itaewon";
 import NavBar from "./NavBar";
 import ListItem from "./ListItem";
 import ListItemHead from "./ListItemHead";
-import FooterDefault from "./itaewon/_footer";
+import FooterDefault from "./FooterDefault";
 import { Fade } from "react-awesome-reveal";
 
 const Page = ({ items, headClassName, itemClassName }) => {
