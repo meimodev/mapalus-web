@@ -7,6 +7,8 @@ module.exports = {
       fontFamily: {
         bengasi: ["BengasiBold"],
         poppins: ["Poppins"],
+        american: ["AmericanTypewritter"],
+        blockLetter: ["blockLetter"],
       },
       screens: {
         xs: { min: "100px", max: "370px" },
