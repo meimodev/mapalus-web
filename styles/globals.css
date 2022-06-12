@@ -5,6 +5,31 @@
 @font-face {
   font-family: "BengasiBold";
   src: url("../public/fonts/BengasiBold.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AmericanTypewritter";
+  src: url("../public/fonts/american-typewriter.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AmericanTypewritter";
+  src: url("../public/fonts/american-typewriter-light.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "AmericanTypewritter";
+  src: url("../public/fonts/american-typewriter-bold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "BlockLetter";
+  src: url("../public/fonts/Blockletter.ttf");
+  font-weight: 400;
 }
 
 html,
