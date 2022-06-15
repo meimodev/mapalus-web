@@ -23,13 +23,20 @@ export const _BuildMeta = () => {
 export default function Page() {
   const router = useRouter();
 
-  const SwiperWrapper = ({ children, label, href }) => {
+  const SwiperWrapper = ({
+    children,
+    label,
+    href,
+    className,
+    speed,
+    delay,
+  }) => {
     return (
       <Swiper
         onClick={() => {
           router.push(href);
         }}
-        speed={1500}
+        speed={speed ? speed : 2000}
         pagination={{
           dynamicBullets: false,
           renderBullet: function (index, className) {
@@ -39,13 +46,13 @@ export default function Page() {
           },
         }}
         autoplay={{
-          delay: Math.floor(Math.random() * 20) * 450,
+          delay: delay ? delay : Math.floor(Math.random() * 20) * 450,
           disableOnInteraction: false,
         }}
         loop={true}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        className={"mySwiper h-full w-full"}
+        className={"mySwiper h-full w-full " + className}
       >
         {children}
       </Swiper>
@@ -124,7 +131,7 @@ export default function Page() {
       ],
     },
     {
-      //last
+      //last B2
       label: "Size B2",
       href: "/bbold/size-b2",
       images: [
@@ -139,6 +146,69 @@ export default function Page() {
         "https://i.ibb.co/C5JH7z3/24.jpg",
       ],
     },
+    {
+      //B4 Part 1
+      label: "Size B4",
+      href: "/bbold/size-b4",
+      images: [
+        "https://i.ibb.co/VtsSCvF/b4-part-1-4.jpg",
+        "https://i.ibb.co/MhwT7w1/b4-part-1-5.jpg",
+        "https://i.ibb.co/0rThKvt/b4-part-1-6.jpg",
+        "https://i.ibb.co/K0XjTcJ/b4-part-1-7.jpg",
+        "https://i.ibb.co/bKFstfZ/b4-part-1-8.jpg",
+        "https://i.ibb.co/x8C5sYn/b4-part-1-9.jpg",
+        "https://i.ibb.co/bvMBmCH/b4-part-1-10.jpg",
+        "https://i.ibb.co/RhMxJ3T/b4-part-1-1.jpg",
+        "https://i.ibb.co/47B7CK9/b4-part-1-2.jpg",
+        "https://i.ibb.co/3dkHb2N/b4-part-1-3.jpg",
+      ],
+    },
+    {
+      //B4 Part 2
+      label: "Size B4",
+      href: "/bbold/size-b4",
+      images: [
+        "https://i.ibb.co/v1sZMvc/b4-part-2-12.jpg",
+        "https://i.ibb.co/0fmKDFw/b4-part-2-13.jpg",
+        "https://i.ibb.co/Q96gYsq/b4-part-2-14.jpg",
+        "https://i.ibb.co/kcV983C/b4-part-2-15.jpg",
+        "https://i.ibb.co/T16HfNH/b4-part-2-1.jpg",
+        "https://i.ibb.co/kytfL9V/b4-part-2-2.jpg",
+        "https://i.ibb.co/vQRCLKd/b4-part-2-3.jpg",
+        "https://i.ibb.co/jV0Q8ST/b4-part-2-4.jpg",
+        "https://i.ibb.co/Wvchw0S/b4-part-2-5.jpg",
+        "https://i.ibb.co/M925xxv/b4-part-2-6.jpg",
+        "https://i.ibb.co/SXB5Lk4/b4-part-2-7.jpg",
+        "https://i.ibb.co/ThqTrh5/b4-part-2-8.jpg",
+        "https://i.ibb.co/nnJwHN8/b4-part-2-9.jpg",
+        "https://i.ibb.co/Xb50rrg/b4-part-2-10.jpg",
+        "https://i.ibb.co/zZnkBBV/b4-part-2-11.jpg",
+      ],
+    },
+    {
+      //C
+      label: "Size C",
+      href: "/bbold/size-C",
+      images: [
+        "https://i.ibb.co/Jjps7Kh/C-part-1-11.jpg",
+        "https://i.ibb.co/wz0Qjd8/C-part-1-12.jpg",
+        "https://i.ibb.co/DgWp0WD/C-part-1-13.jpg",
+        "https://i.ibb.co/mCTHNjR/C-part-1-14.jpg",
+        "https://i.ibb.co/YBT1CyC/C-part-1-15.jpg",
+        "https://i.ibb.co/pjqKxN8/C-part-1-16.jpg",
+        "https://i.ibb.co/xSYJpVf/C-part-1-17.jpg",
+        "https://i.ibb.co/7pxZXbR/C-part-1-1.jpg",
+        "https://i.ibb.co/TLMQkJC/C-part-1-2.jpg",
+        "https://i.ibb.co/MhPHbHT/C-part-1-3.jpg",
+        "https://i.ibb.co/VLvv3Yc/C-part-1-4.jpg",
+        "https://i.ibb.co/5Mkqm7w/C-part-1-5.jpg",
+        "https://i.ibb.co/PwVgpd4/C-part-1-6.jpg",
+        "https://i.ibb.co/ZKVwCDW/C-part-1-7.jpg",
+        "https://i.ibb.co/q7DrtMz/C-part-1-8.jpg",
+        "https://i.ibb.co/wKxvCf0/C-part-1-9.jpg",
+        "https://i.ibb.co/2cc5g08/C-part-1-10.jpg",
+      ],
+    },
   ];
 
   return (
@@ -149,11 +219,37 @@ export default function Page() {
         <main className="">
           <div className="">
             <div className="flex-col ">
-              <div className="py-10 px-12 fixed z-50 bg-stone-700 drop-shadow-2xl">
+              <div className=" fixed z-30 bg-stone-700 drop-shadow-2xl left-0 right-0 top-0">
+                <SwiperWrapper href={"#"} label={""} speed={200} delay={200}>
+                  <SwiperSlide className="bg-sky-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                  <SwiperSlide className="bg-lime-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                  <SwiperSlide className="bg-cyan-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                  <SwiperSlide className="bg-yellow-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                  <SwiperSlide className="bg-fuchsia-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                  <SwiperSlide className="bg-violet-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                  <SwiperSlide className="bg-teal-400 ">
+                    <div className="h-28 w-full"></div>
+                  </SwiperSlide>
+                </SwiperWrapper>
+              </div>
+              <div className="fixed left-0 right-0 top-2 z-50">
                 <img src="/bbold.png" alt="Itaewon x Kland logo" />
               </div>
+
               <Fade cascade triggerOnce>
-                <div className="h-[9.5rem]"></div>
+                <div className="h-[7rem]"></div>
                 <div className="flex h-[13rem]">
                   <SwiperWrapper href={data[0].href} label={data[0].label}>
                     {data[0].images.map((e) => {
@@ -169,8 +265,8 @@ export default function Page() {
                     })}
                   </SwiperWrapper>
 
-                  <SwiperWrapper href={data[1].href} label={data[1].label}>
-                    {data[1].images.map((e) => {
+                  <SwiperWrapper href={data[6].href} label={data[6].label}>
+                    {data[6].images.map((e) => {
                       return (
                         <SwiperSlide
                           key={e}
@@ -184,8 +280,8 @@ export default function Page() {
                   </SwiperWrapper>
                 </div>
                 <div className="flex h-[22rem]">
-                  <SwiperWrapper href={data[4].href} label={data[4].label}>
-                    {data[4].images.map((e) => {
+                  <SwiperWrapper href={data[7].href} label={data[7].label}>
+                    {data[7].images.map((e) => {
                       return (
                         <SwiperSlide
                           key={e}
@@ -198,6 +294,7 @@ export default function Page() {
                     })}
                   </SwiperWrapper>
                 </div>
+
                 <div className="flex h-[13rem]">
                   <SwiperWrapper href={data[2].href} label={data[2].label}>
                     {data[2].images.map((e) => {
@@ -215,6 +312,52 @@ export default function Page() {
 
                   <SwiperWrapper href={data[3].href} label={data[3].label}>
                     {data[3].images.map((e) => {
+                      return (
+                        <SwiperSlide
+                          key={e}
+                          style={{
+                            background: `url(${e})`,
+                            backgroundSize: "cover",
+                          }}
+                        ></SwiperSlide>
+                      );
+                    })}
+                  </SwiperWrapper>
+                </div>
+
+                <div className="flex h-[22rem]">
+                  <SwiperWrapper href={data[4].href} label={data[4].label}>
+                    {data[4].images.map((e) => {
+                      return (
+                        <SwiperSlide
+                          key={e}
+                          style={{
+                            background: `url(${e})`,
+                            backgroundSize: "cover",
+                          }}
+                        ></SwiperSlide>
+                      );
+                    })}
+                  </SwiperWrapper>
+                </div>
+
+                <div className="flex h-[13rem]">
+                  <SwiperWrapper href={data[5].href} label={data[5].label}>
+                    {data[5].images.map((e) => {
+                      return (
+                        <SwiperSlide
+                          key={e}
+                          style={{
+                            background: `url(${e})`,
+                            backgroundSize: "cover",
+                          }}
+                        ></SwiperSlide>
+                      );
+                    })}
+                  </SwiperWrapper>
+
+                  <SwiperWrapper href={data[1].href} label={data[1].label}>
+                    {data[1].images.map((e) => {
                       return (
                         <SwiperSlide
                           key={e}
