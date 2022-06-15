@@ -57,7 +57,7 @@ export default function Page() {
                           </div>
                         }
                       >
-                        <_buildListItem item="Espresso" price="25 / --" />
+                        <_buildListItem item="Espresso" price="15 / --" />
                         <_buildListItem item="Americano" price="18 / 18" />
                         <_buildListItem
                           item="Espresso On The Rock"
