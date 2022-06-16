@@ -9,6 +9,7 @@ module.exports = {
         poppins: ["Poppins"],
         american: ["AmericanTypewritter"],
         blockLetter: ["blockLetter"],
+        lemon: ["LemonMilk"],
       },
       screens: {
         xs: "360px",

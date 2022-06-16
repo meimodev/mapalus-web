@@ -26,7 +26,7 @@ export default function Page() {
       />
 
       <Fade cascade triggerOnce>
-        <div className="h-full bg-stone-900 flex flex-col justify-center items-center  text-stone-100 ">
+        <div className="h-full bg-[#372f2d] flex flex-col justify-center items-center  text-stone-100 ">
           <main className="flex-grow ">
             <div className="flex justify-center items-center">
               <div className="flex-col ">

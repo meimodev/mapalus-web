@@ -32,6 +32,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../public/fonts/LemonMilkbold.otf");
+  font-weight: 800;
+}
+
 html,
 body {
   padding: 0;
