@@ -167,7 +167,7 @@ export default function Pages() {
   const links = {
     b2: {
       whatsApp:
-        "https://api.whatsapp.com/send?phone=85756681077&text=ORDER-BBOLD-B2",
+        "https://api.whatsapp.com/send?phone=+6285756681077&text=ORDER-BBOLD-B2",
       map: "https://www.google.com/maps/place/BBOLD.MMXX+TONDANO/@1.3033844,124.9084929,17z/data=!3m1!4b1!4m5!3m4!1s0x328715e2e5de6b81:0x4965ac475ae18d7c!8m2!3d1.3033865!4d124.9106838",
       tokopedia:
         "https://www.tokopedia.com/bbold/bbold-dekorasi-dinding-size-b2-22-5cm-x-30cm-x-2cm",
@@ -176,7 +176,7 @@ export default function Pages() {
     },
     b4: {
       whatsApp:
-        "https://api.whatsapp.com/send?phone=85756681077&text=ORDER-BBOLD-B4",
+        "https://api.whatsapp.com/send?phone=+6285756681077&text=ORDER-BBOLD-B4",
       map: "https://www.google.com/maps/place/BBOLD.MMXX+TONDANO/@1.3033844,124.9084929,17z/data=!3m1!4b1!4m5!3m4!1s0x328715e2e5de6b81:0x4965ac475ae18d7c!8m2!3d1.3033865!4d124.9106838",
       tokopedia:
         "https://www.tokopedia.com/bbold/bbold-dekorasi-dinding-size-b4-30cm-x-45cm-x-2cm-photo-tulisan",
@@ -185,17 +185,17 @@ export default function Pages() {
     },
     c: {
       whatsApp:
-        "https://api.whatsapp.com/send?phone=85756681077&text=ORDER-BBOLD-SIZE-C",
+        "https://api.whatsapp.com/send?phone=+6285756681077&text=ORDER-BBOLD-SIZE-C",
       map: "https://www.google.com/maps/place/BBOLD.MMXX+TONDANO/@1.3033844,124.9084929,17z/data=!3m1!4b1!4m5!3m4!1s0x328715e2e5de6b81:0x4965ac475ae18d7c!8m2!3d1.3033865!4d124.9106838",
     },
     lanyard: {
       whatsApp:
-        "https://api.whatsapp.com/send?phone=85756681077&text=ORDER-BBOLD-LANYARD",
+        "https://api.whatsapp.com/send?phone=+6285756681077&text=ORDER-BBOLD-LANYARD",
       map: "https://www.google.com/maps/place/BBOLD.MMXX+TONDANO/@1.3033844,124.9084929,17z/data=!3m1!4b1!4m5!3m4!1s0x328715e2e5de6b81:0x4965ac475ae18d7c!8m2!3d1.3033865!4d124.9106838",
     },
     pin: {
       whatsApp:
-        "https://api.whatsapp.com/send?phone=85756681077&text=ORDER-BBOLD-PIN",
+        "https://api.whatsapp.com/send?phone=+6285756681077&text=ORDER-BBOLD-PIN",
       map: "https://www.google.com/maps/place/BBOLD.MMXX+TONDANO/@1.3033844,124.9084929,17z/data=!3m1!4b1!4m5!3m4!1s0x328715e2e5de6b81:0x4965ac475ae18d7c!8m2!3d1.3033865!4d124.9106838",
     },
   };
