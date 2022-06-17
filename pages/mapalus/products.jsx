@@ -62,17 +62,17 @@ const Products = ({ data, time }) => {
               X
             </div>
           )}
-          <div className="text-left flex-1">{product.name}</div>
-          <div className="min-w-fit flex flex-col ml-5 ">
-            <div className="flex  gap-1">
-              <div className="text-xs self-center text-zinc-400">Rp.</div>
-              <div className="text-right">
-                {product.price.toLocaleString("en").replace(",", ".")}
-              </div>
-            </div>
-            <div className="text-xs text-right text-zinc-400 ">
-              {product.unit.toLowerCase()}
-            </div>
+          <span className="text-left flex-1 mr-5">{product.name}</span>
+          <div className="min-w-fit inline ">
+            <span className="inline text-xs self-center text-zinc-400">
+              Rp.
+            </span>
+            <span className="inline text-right">
+              {product.price.toLocaleString("en").replace(",", ".")}
+            </span>
+            <span className="inline text-xs text-right text-zinc-400 pl-1 ">
+              / {product.unit.toLowerCase()}
+            </span>
           </div>
         </div>
       </Fade>
