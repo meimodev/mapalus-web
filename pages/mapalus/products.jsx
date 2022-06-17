@@ -58,20 +58,20 @@ const Products = ({ data, time }) => {
           {product.status === "available" ? (
             <div></div>
           ) : (
-            <div className="text-red-600 mr-3 font-bold font-bengasi self-center">
-              X
+            <div className="text-red-600 font-bold font-bengasi self-center">
+              {" X "}
             </div>
           )}
           <span className="text-left flex-1 mr-5">{product.name}</span>
           <div className="min-w-fit inline ">
             <span className="inline text-xs self-center text-zinc-400">
-              Rp.
+              {" Rp. "}
             </span>
             <span className="inline text-right">
               {product.price.toLocaleString("en").replace(",", ".")}
             </span>
-            <span className="inline text-xs text-right text-zinc-400 pl-1 ">
-              / {product.unit.toLowerCase()}
+            <span className="inline text-xs text-right text-zinc-400 ">
+              {" / "} {product.unit.replace(/^\w/, (c) => c.toUpperCase())}
             </span>
           </div>
         </div>
