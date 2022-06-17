@@ -376,7 +376,6 @@ export default function Pages() {
     typeof links[`${id}`] === "undefined" ||
     typeof pictures[`${id}`] === "undefined"
   ) {
-    console.log(links[`${id}`]);
     return (
       <div className="text-neutral-100 text-4xl font-bold bg-blue-50">
         LOADING...
