@@ -35,7 +35,9 @@ export default function Page() {
     return (
       <Swiper
         onClick={() => {
-          router.push(href);
+          if (href) {
+            router.push(href);
+          }
         }}
         speed={speed ? speed : 2000}
         pagination={{
@@ -257,6 +259,19 @@ export default function Page() {
     },
   ];
 
+  const availablePictures = {
+    label: "BBOLD",
+    href: "",
+    images: [
+      "https://i.ibb.co/C1Kp1Kf/order-1-1.jpg",
+      "https://i.ibb.co/S6cZHms/order-1-2.jpg",
+      "https://i.ibb.co/W3Xgy30/order-1-3.jpg",
+      "https://i.ibb.co/ZdkvMVS/order-1-4.jpg",
+      "https://i.ibb.co/ydJcw4g/order-1-5.jpg",
+      "https://i.ibb.co/8cLn2TV/order-1-6.jpg",
+    ],
+  };
+
   return (
     <div className="h-full w-full bg-stone-700">
       <_BuildMeta />
@@ -440,6 +455,31 @@ export default function Page() {
                           style={{
                             background: `url(${e})`,
                             backgroundSize: "cover",
+                          }}
+                        ></SwiperSlide>
+                      );
+                    })}
+                  </SwiperWrapper>
+                </div>
+
+                {/* Availability  */}
+                <div className="flex h-screen px-2">
+                  <SwiperWrapper
+                    href={availablePictures.href}
+                    label={availablePictures.label}
+                    speed={2000}
+                    delay={1000}
+                    labelClassName="w-[7rem] h-12"
+                  >
+                    {availablePictures.images.map((e) => {
+                      return (
+                        <SwiperSlide
+                          key={e}
+                          style={{
+                            background: `url(${e})`,
+                            backgroundSize: "contain",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
                           }}
                         ></SwiperSlide>
                       );
