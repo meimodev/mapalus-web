@@ -50,7 +50,7 @@ export default function Page() {
                   >
                     <div>
                       <CollapsibleDiv
-                        isActive={true}
+                        isActive={false}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             black
@@ -66,7 +66,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={true}
+                        isActive={false}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             White
@@ -84,7 +84,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={true}
+                        isActive={false}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             sweet
@@ -108,7 +108,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={true}
+                        isActive={false}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             FILTER COFFEE
@@ -126,7 +126,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={true}
+                        isActive={false}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90 mr-4">
                             NON COFFEE - MILK BASED
