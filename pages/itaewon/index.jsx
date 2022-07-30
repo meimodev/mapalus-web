@@ -21,12 +21,16 @@ export default function Itaweon() {
       <_BuildMeta />
 
       <Fade cascade triggerOnce>
-        <div className="h-full bg-neutral-900 flex flex-col justify-center items-center px-6  ">
-          <main className="flex-grow ">
+        <div className="h-screen bg-gray-100 flex flex-col justify-center items-center px-6  ">
+          <main className="flex-grow">
             <div className="flex justify-center items-center">
               <div className="flex-col ">
                 <div className="my-6 p-2">
-                  <img src="/itaewon_logo.svg" alt="Itaewon x Kland logo" />
+                  <img
+                    src="/itaewon_logo.png"
+                    className="w-full bg-no-repeat bg-cover"
+                    alt="Itaewon x Kland logo"
+                  />
                 </div>
 
                 <div>

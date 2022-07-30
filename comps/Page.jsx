@@ -5,16 +5,22 @@ import ListItemHead from "./ListItemHead";
 import FooterDefault from "./FooterDefault";
 import { Fade } from "react-awesome-reveal";
 
-const Page = ({ items, headClassName, itemClassName }) => {
+const Page = ({
+  items,
+  navBarClassName,
+  headClassName,
+  itemClassName,
+  pageClassName,
+}) => {
   return (
-    <div>
-      <div className="h-full bg-neutral-900">
+    <div className={pageClassName}>
+      <div className={"h-full"}>
         <_BuildMeta />
 
         <Fade duration={400} triggerOnce={true}>
           <main>
             <nav>
-              <NavBar backHref="/itaewon" />
+              <NavBar navBarClassName={navBarClassName} backHref="/itaewon" />
             </nav>
             <section className="flex-col mx-6">
               <div className="py-20">

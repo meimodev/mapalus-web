@@ -121,5 +121,13 @@ export default function Food() {
     { type: "item", name: "AYAM GEPREK", price: "23" },
   ];
 
-  return <Page items={items} headClassName="text-kland" />;
+  return (
+    <Page
+      items={items}
+      headClassName="text-kland "
+      pageClassName="bg-gray-100"
+      itemClassName="text-gray-900"
+      navBarClassName="bg-gray-100"
+    />
+  );
 }

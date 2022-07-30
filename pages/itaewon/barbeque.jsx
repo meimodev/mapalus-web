@@ -9,7 +9,7 @@ export default function Bargbeque() {
     {
       type: "item",
       name: "PAKET 2 ORANG",
-      price: "80",
+      price: "90",
       desc: (
         <div className="flex italic pb-3">
           <div className="flex-grow-0 pr-3">Include</div>
@@ -29,7 +29,7 @@ export default function Bargbeque() {
     {
       type: "item",
       name: "PAKET 4 ORANG",
-      price: "150",
+      price: "155",
       desc: (
         <div className="flex italic pb-3">
           <div className="flex-grow-0 pr-3">Include</div>
@@ -49,7 +49,7 @@ export default function Bargbeque() {
     {
       type: "item",
       name: "PAKET 6 ORANG",
-      price: "230",
+      price: "215",
       desc: (
         <div className="flex italic pb-3">
           <div className="flex-grow-0 pr-3">Include</div>
@@ -67,12 +67,21 @@ export default function Bargbeque() {
       ),
     },
 
-    { type: "head", name: "GRILL ADD-ON" },
-    { type: "item", name: "SAMGYEOPSAL 1 pax", price: "30" },
-    { type: "item", name: "PORK HAM 1 pax", price: "30" },
-    { type: "item", name: "MARINATED CHICKEN", price: "30" },
-    { type: "item", name: "KIMCHI", price: "FREE" },
+    { type: "head", name: "GRILL ADD-ONS" },
+    { type: "item", name: "SAMGYEOPSAL / PORK BELLY", price: "30" },
+    { type: "item", name: "HAM / LOIN ", price: "30" },
+    { type: "item", name: "CHICKEN", price: "30" },
+    { type: "item", name: "KIMCHI", price: "5" },
+    { type: "item", name: "RICE", price: "5" },
   ];
 
-  return <Page items={items} headClassName="text-kland" />;
+  return (
+    <Page
+      items={items}
+      headClassName="text-kland "
+      pageClassName="bg-gray-100 "
+      itemClassName="text-gray-900"
+      navBarClassName="bg-gray-100"
+    />
+  );
 }
