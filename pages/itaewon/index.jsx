@@ -17,12 +17,12 @@ export function _BuildMeta() {
 export default function Itaweon() {
   // noinspection HtmlUnknownTarget
   return (
-    <div>
+    <div className="bg-gray-100 ">
       <_BuildMeta />
 
       <Fade cascade triggerOnce>
-        <div className="h-screen bg-gray-100 flex flex-col justify-center items-center px-6  ">
-          <main className="flex-grow">
+        <div className="h-screen flex flex-col justify-center items-center px-6 max-w-md mx-auto">
+          <main>
             <div className="flex justify-center items-center">
               <div className="flex-col ">
                 <div className="my-6 p-2">

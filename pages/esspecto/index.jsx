@@ -17,7 +17,7 @@ export default function Page() {
     );
   };
   return (
-    <div>
+    <div className="bg-[#372f2d]">
       <Meta
         title="Esspecto Coffee"
         description="Esspecto Coffee menu list"
@@ -26,7 +26,7 @@ export default function Page() {
       />
 
       <Fade cascade triggerOnce>
-        <div className="h-full bg-[#372f2d] flex flex-col justify-center items-center  text-stone-100 ">
+        <div className="h-full  flex flex-col justify-center items-center  text-stone-100 max-w-lg mx-auto">
           <main className="flex-grow ">
             <div className="flex justify-center items-center">
               <div className="flex-col ">
@@ -57,11 +57,11 @@ export default function Page() {
                           </div>
                         }
                       >
-                        <_buildListItem item="Espresso" price="15 / --" />
+                        <_buildListItem item="Espresso" price="15 / - - -" />
                         <_buildListItem item="Americano" price="18 / 18" />
                         <_buildListItem
                           item="Espresso On The Rock"
-                          price="-- / 18"
+                          price=" - - - / 18"
                         />
                       </CollapsibleDiv>
 
@@ -79,7 +79,7 @@ export default function Page() {
                           item="Cappuccino Classic"
                           price="22 / 25"
                         />
-                        <_buildListItem item="Piccolo" price="18 / --" />
+                        <_buildListItem item="Piccolo" price="18 / - - - " />
                         <_buildListItem item="Cafe Mocha" price="25 / 26" />
                       </CollapsibleDiv>
 
@@ -91,9 +91,12 @@ export default function Page() {
                           </div>
                         }
                       >
-                        <_buildListItem item="Biscoff Coffee" price="-- / 28" />
-                        <_buildListItem item="Affogato" price="-- / 20" />
-                        <_buildListItem item="Rose Latte" price="-- / 26" />
+                        <_buildListItem
+                          item="Biscoff Coffee"
+                          price=" - - - / 28"
+                        />
+                        <_buildListItem item="Affogato" price=" - - - / 20" />
+                        <_buildListItem item="Rose Latte" price=" - - - / 26" />
                         <_buildListItem
                           item="Green Tea Presso"
                           price="24 / 26"
@@ -130,7 +133,10 @@ export default function Page() {
                           </div>
                         }
                       >
-                        <_buildListItem item="Biscoff Milky" price="-- / 26" />
+                        <_buildListItem
+                          item="Biscoff Milky"
+                          price=" - - - / 26"
+                        />
                         <_buildListItem
                           item="Green Tea Latte"
                           price="22 / 26"
