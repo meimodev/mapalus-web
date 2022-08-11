@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <div className="bg-[#372f2d]">
       <Meta
-        title="Esspecto Coffee | Tondano"
+        title="Esspecto Coffee | Manado"
         description="Esspecto Coffee menu list"
         color="#1c1917"
         image="/esspecto-hori.png"
@@ -164,7 +164,7 @@ export default function Page() {
                     </div>
                   </CollapsibleDiv>
 
-                  <CollapsibleDiv
+                  {/* <CollapsibleDiv
                     isActive={true}
                     paddingBottom
                     title={
@@ -179,9 +179,9 @@ export default function Page() {
                     <_buildListItem item="Ayam Geprek" price="25" />
                     <_buildListItem item="Mie Instan" price="12" />
                     <_buildListItem item="Spagehetti Bolognese" price="26" />
-                  </CollapsibleDiv>
+                  </CollapsibleDiv> */}
 
-                  <CollapsibleDiv
+                  {/* <CollapsibleDiv
                     isActive={true}
                     title={
                       <div className="font-blockLetter uppercase text-6xl text-amber-400">
@@ -221,13 +221,13 @@ export default function Page() {
                       <_buildListItem item="Ice Cream" price="6" />
                       <_buildListItem item="Biscoff" price="6" />
                     </CollapsibleDiv>
-                  </CollapsibleDiv>
+                  </CollapsibleDiv> */}
                 </div>
               </div>
             </div>
           </main>
 
-          <div className="pt-20 mt-4 pb-96">
+          <div className="pt-4 mt-4 pb-96">
             <FooterDefault />
           </div>
         </div>
