@@ -58,10 +58,10 @@ export default function Page() {
                         }
                       >
                         <_buildListItem item="Espresso" price="15 / - - -" />
-                        <_buildListItem item="Americano" price="18 / 18" />
+                        <_buildListItem item="Americano" price="20 / 24" />
                         <_buildListItem
                           item="Espresso On The Rock"
-                          price=" - - - / 18"
+                          price=" - - - / 20"
                         />
                       </CollapsibleDiv>
 
@@ -74,20 +74,20 @@ export default function Page() {
                         }
                       >
                         <_buildListItem item="Cafe Latte" price="22 / 25" />
-                        <_buildListItem item="Cappuccino" price="22 / 25" />
+                        <_buildListItem item="Cappuccino" price="24 / 25" />
                         <_buildListItem
                           item="Cappuccino Classic"
-                          price="22 / 25"
+                          price="24 / 25"
                         />
-                        <_buildListItem item="Piccolo" price="18 / - - - " />
-                        <_buildListItem item="Cafe Mocha" price="25 / 26" />
+                        {/* <_buildListItem item="Piccolo" price="18 / - - - " /> */}
+                        <_buildListItem item="Cafe Mocha" price="25 / 30" />
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
                         isActive={false}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
-                            sweet
+                            sweet coffee
                           </div>
                         }
                       >
@@ -95,16 +95,17 @@ export default function Page() {
                           item="Biscoff Coffee"
                           price=" - - - / 28"
                         />
-                        <_buildListItem item="Affogato" price=" - - - / 20" />
-                        <_buildListItem item="Rose Latte" price=" - - - / 26" />
+                        <_buildListItem item="Toudano" price="22 / 25" />
+                        <_buildListItem item="Affogato" price=" - - - / 28" />
+                        <_buildListItem item="Rose Latte" price=" - - - / 28" />
                         <_buildListItem
                           item="Green Tea Presso"
                           price="24 / 26"
                         />
-                        <_buildListItem item="Caramello" price="24 / 26" />
-                        <_buildListItem item="Vanilla Latte" price="24 / 26" />
                         <_buildListItem item="Red Velpresso" price="24 / 26" />
-                        <_buildListItem item="Toudano" price="20 / 22" />
+                        <_buildListItem item="Caramello" price="27 / 30" />
+                        <_buildListItem item="Vanilla Latte" price="27 / 30" />
+                        <_buildListItem item="Cafe Bonbon" price="16 / 20" />
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
@@ -115,11 +116,11 @@ export default function Page() {
                           </div>
                         }
                       >
-                        <_buildListItem item="Aeropress" price="22" />
-                        <_buildListItem item="v60" price="22" />
-                        <_buildListItem item="Kalita Wave" price="22" />
-                        <_buildListItem item="Blue Bottle" price="25" />
-                        <_buildListItem item="Japannesse Drip" price="25" />
+                        {/* <_buildListItem item="Aeropress" price="22" /> */}
+                        <_buildListItem item="v60" price="25" />
+                        <_buildListItem item="Kalita Wave" price="25" />
+                        <_buildListItem item="Blue Bottle" price="27" />
+                        <_buildListItem item="Japannesse Drip" price="27" />
                         <div className="text-center  mt-2 mb-2 rounded-xl font-american bg-amber-400 text-stone-900">
                           Ask barista for beans &amp; price
                         </div>
@@ -135,28 +136,28 @@ export default function Page() {
                       >
                         <_buildListItem
                           item="Biscoff Milky"
-                          price=" - - - / 26"
+                          price=" - - - / 27"
                         />
                         <_buildListItem
                           item="Green Tea Latte"
-                          price="22 / 26"
+                          price="22 / 27"
                         />
                         <_buildListItem
                           item="Red Velvet Latte"
-                          price="22 / 26"
+                          price="22 / 27"
                         />
-                        <_buildListItem item="Taro Latte" price="22 / 26" />
+                        <_buildListItem item="Taro Latte" price="22 / 27" />
                         <_buildListItem
                           item="Chocolate Original"
-                          price="22 / 26"
+                          price="22 / 27"
                         />
                         <_buildListItem
                           item="Chocolate Caramel"
-                          price="24 / 27"
+                          price="24 / 30"
                         />
                         <_buildListItem
                           item="Chocolate Vanilla"
-                          price="24 / 27"
+                          price="24 / 30"
                         />
                         <_buildListItem item="White Caramel" price="20 / 22" />
                         <_buildListItem item="White Vanilla" price="20 / 22" />
