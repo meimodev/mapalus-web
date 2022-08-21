@@ -71,7 +71,7 @@ export default function Food() {
     {
       type: "item",
       name: "YANGNYEOM CHICKEN",
-      price: "25",
+      price: "28",
       desc: (
         <div className="italic pb-3 ">
           <div>
@@ -88,7 +88,7 @@ export default function Food() {
     {
       type: "item",
       name: "DUBU-JJIGAE",
-      price: "18",
+      price: "20",
       desc: (
         <div className="italic pb-3">
           <div>Korean Tofu stew.</div>
@@ -99,7 +99,7 @@ export default function Food() {
     {
       type: "item",
       name: "KIMCHI-JJIGAE",
-      price: "18",
+      price: "20",
       desc: (
         <div className="italic">
           <div>Kimchi stew.</div>
@@ -113,12 +113,10 @@ export default function Food() {
     { type: "item", name: "NASI GORENG BA'", price: "20" },
     { type: "item", name: "NASI GORENG AYAM", price: "20" },
     { type: "item", name: "NASI GORENG HONGKONG", price: "20" },
-    { type: "item", name: "NASI GILA BA'", price: "18" },
-    { type: "item", name: "NASI GILA AYAM", price: "18" },
-    { type: "item", name: "MIE KUAH BA'", price: "15" },
-    { type: "item", name: "MIE GORENG BA'", price: "18" },
-    { type: "item", name: "MIE GORENG AYAM", price: "18" },
-    { type: "item", name: "AYAM GEPREK", price: "23" },
+    { type: "item", name: "NASI GILA BA'", price: "20" },
+    { type: "item", name: "NASI GILA AYAM", price: "20" },
+    { type: "item", name: "NASI AYAM GEPREK", price: "23" },
+    { type: "item", name: "NASI TELUR GEPREK", price: "15" },
   ];
 
   return (
