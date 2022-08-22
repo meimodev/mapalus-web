@@ -63,8 +63,8 @@ const Mapalus = () => {
                 <div className="flex flex-col mt-4">
                   <span>Pesan melalui media sosial</span>
                   <_BuildButton
-                    href="https://api.whatsapp.com/send?phone=6289525699078&text=Halo,%20mo%20ba%20pesan%20bagimana%20kang?"
-                    title="0895 2569 9078"
+                    href="https://api.whatsapp.com/send?phone=6287859896567&text=Halo,%20mo%20ba%20pesan%20bagimana%20kang?"
+                    title="0878 5989 6567"
                     icon={<i className="lab la-whatsapp text-4xl" />}
                     available={true}
                   />
