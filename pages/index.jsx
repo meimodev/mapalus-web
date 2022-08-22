@@ -41,14 +41,14 @@ export default function Home() {
               </div>
               <div className="mt-4">
                 <a
-                  href="https://api.whatsapp.com/send/?phone=%2B6289525699078&text&app_absent=0"
+                  href="https://api.whatsapp.com/send/?phone=%2B6287859896567&text&app_absent=0"
                   target="_blank"
                   className="text-gray-100 text-sm text-center"
                   rel="noreferrer"
                 >
                   <div className="flex items-center justify-center gap-2 border bg-mapalus border-mapalus text-neutral-900 text-2xl p-4 rounded-xl">
                     <i className="lab la-whatsapp text-4xl " />
-                    <span>0895 2569 9078</span>
+                    <span>0878 5989 6567</span>
                   </div>
                 </a>
               </div>
