@@ -143,7 +143,7 @@ export default function Pages() {
         "https://i.ibb.co/2NH8t3T/Landyard-1-1.jpg",
         "https://i.ibb.co/PYY02qg/Landyard-1-2.jpg",
         "https://i.ibb.co/XS22Wnv/Landyard-1-3.jpg",
-        "https://i.ibb.co/KL86qf6/Landyard-1-4.jpg",
+        "https://i.ibb.co/VvWHqRF/Landyard-1-4.jpg",
         "https://i.ibb.co/NyRXF0N/Landyard-1-5.jpg",
         "https://i.ibb.co/D856yLw/Landyard-1-6.jpg",
         "https://i.ibb.co/M2bQHSW/Landyard-1-7.jpg",
