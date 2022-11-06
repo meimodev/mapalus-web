@@ -84,12 +84,7 @@ const Mapalus = () => {
                 </div>
 
                 <div className="flex flex-col mb-4">
-                  <a
-                    href="/mapalus/products"
-                    rel="noreferrer"
-                    target="_blank"
-                    passHref
-                  >
+                  <a href="/mapalus/products" rel="noreferrer" target="_blank">
                     <div className="flex gap-3 items-center border border-mapalus p-2 px-5 my-2 rounded-lg cursor-pointer bg-mapalus text-neutral-900 font-bold">
                       <div>
                         <i className="las la-list-alt text-4xl" />
