@@ -42,6 +42,7 @@ export default function Page() {
                   <CollapsibleDiv
                     isActive={true}
                     paddingBottom
+                    cascade={true}
                     title={
                       <div className="font-blockLetter uppercase text-6xl text-amber-400">
                         COFFEE
@@ -50,7 +51,7 @@ export default function Page() {
                   >
                     <div>
                       <CollapsibleDiv
-                        isActive={false}
+                        isActive={true}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             black
@@ -66,7 +67,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={false}
+                        isActive={true}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             White
@@ -84,7 +85,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={false}
+                        isActive={true}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             sweet coffee
@@ -109,7 +110,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={false}
+                        isActive={true}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90">
                             FILTER COFFEE
@@ -127,7 +128,7 @@ export default function Page() {
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
-                        isActive={false}
+                        isActive={true}
                         title={
                           <div className="font-american uppercase text-2xl font-bold text-amber-400 opacity-90 mr-4">
                             NON COFFEE - MILK BASED
@@ -228,7 +229,7 @@ export default function Page() {
             </div>
           </main>
 
-          <div className="pt-4 mt-4 pb-96">
+          <div className="pt-4 mt-4 pb-20">
             <FooterDefault />
           </div>
         </div>

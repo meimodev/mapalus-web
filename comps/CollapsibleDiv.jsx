@@ -6,6 +6,7 @@ export default function CollapsibleDiv({
   isActive,
   title,
   children,
+  cascade,
   paddingBottom,
 }) {
   const [isExpanded, setExpanded] = useState(isActive);
@@ -18,9 +19,9 @@ export default function CollapsibleDiv({
   }, [isActive, setExpanded]);
 
   return (
-    <Fade cascade triggerOnce duration={1000}>
+    <Fade cascade={cascade} triggerOnce duration={1000}>
       <div
-        className="py-4 flex justify-between items-center"
+        className="pt-6 pb-1 flex justify-between items-center"
         {...getToggleProps({
           onClick: () => setExpanded(() => !isExpanded),
         })}
@@ -35,7 +36,7 @@ export default function CollapsibleDiv({
         </div>
       </div>
       <div {...getCollapseProps()}>
-        <Fade cascade duration={400}>
+        <Fade cascade={cascade} duration={400}>
           {children}
         </Fade>
         {paddingBottom ? <div className="h-12"></div> : <div></div>}
