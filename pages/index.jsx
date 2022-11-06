@@ -15,8 +15,8 @@ export default function Home() {
     <div>
       <Meta
         title="Mapalus | Pasar Online Minahasa"
-        description="Mapalus merupakan pasar online terbesar di Minahasa, Tondano, Manado, Tomohon, Bitung, Amurang  dan sekitarnya"
-        color="#ffb600"
+        description="Aplikasi pasar online tersedia di AppStore & Playstore, Minahasa, Tondano, Manado, Tomohon, Bitung, Amurang dan sekitarnya"
+        color="#FF9800"
         image={"/mapalus.svg"}
       />
 

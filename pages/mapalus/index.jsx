@@ -1,14 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Meta from "../../comps/Meta";
 import { Fade } from "react-awesome-reveal";
-import Link from "next/link";
 
 export function _BuildMeta({ title }) {
   return (
     <Meta
       title={title ? title : "Mapalus | Pasar online minahasa"}
-      description="Pasar online minahasa, manado, amurang, airmadidi, tondano, tomohon"
-      color="#ffb600"
+      description="Aplikasi pasar online tersedia di AppStore & Playstore, Minahasa, Tondano, Manado, Tomohon, Bitung, Amurang dan sekitarnya"
+      color="#FF9800"
       image={"/mapalus.svg"}
     />
   );
@@ -39,8 +38,10 @@ const Mapalus = () => {
                 <img src={"/mapalus.svg"} alt="Mapalus Logo" />
               </div>
 
-              <span>Pasar online</span>
-              <span className="font-bengasi">HARGA PASAR - ANTAR RUMAH</span>
+              <span>Aplikasi pasar online</span>
+              <span className="font-bengasi">
+                HARGA DIPASAR - ANTAR DIRUMAH
+              </span>
               <div className="border-b-2 border-mapalus mt-2 mb-4 rounded-lg " />
 
               <Fade cascade triggerOnce>

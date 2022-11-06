@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         itaewon: "#F59E0B",
         kland: "#14B8A6",
-        mapalus: "#ffb600",
+        mapalus: "#FF9800",
       },
     },
   },
