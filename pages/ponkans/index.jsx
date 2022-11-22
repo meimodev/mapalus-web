@@ -5,6 +5,7 @@ import FooterDefault from "../../comps/FooterDefault";
 import { Fade } from "react-awesome-reveal";
 import Meta from "../../comps/Meta";
 import CollapsibleDiv from "../../comps/CollapsibleDiv";
+import PromoBubble from "../../comps/PromoBubble";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Autoplay } from "swiper";
@@ -201,7 +202,7 @@ export default function Page() {
         title="Ponkans Cafe | Tondano"
         description="Daftar Menu Ponkans Cafe Tondano"
         color="##f8fafc"
-        image="/esspecto-hori.png"
+        image="/logos/logo-ponkans.png"
       >
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Great+Vibes&display=swap"
@@ -251,11 +252,23 @@ export default function Page() {
             </div>
           </main>
 
-          <div className="pt-20 mt-4 pb-12">
+          <div className="pt-20 mt-4 pb-24">
             <FooterDefault />
           </div>
         </div>
       </Fade>
+
+      {/* <div className="fixed right-4 bottom-4">
+        <div className="flex gap-4">
+          <PromoBubble
+            onClick={() => {
+              console.log("clicked");
+            }}
+            text="Promo"
+          />
+          <PromoBubble />
+        </div>
+      </div> */}
 
       {/* <div className="fixed top-0 bottom-0 left-0 right-0 z-20">
         <div className="bg-blue-200 ">

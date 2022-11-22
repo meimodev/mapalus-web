@@ -64,8 +64,8 @@ const Mapalus = () => {
                 <div className="flex flex-col mt-4">
                   <span>Pesan melalui media sosial</span>
                   <_BuildButton
-                    href="https://api.whatsapp.com/send?phone=6287859896567&text=Halo,%20mo%20ba%20pesan%20bagimana%20kang?"
-                    title="0878 5989 6567"
+                    href="https://api.whatsapp.com/send?phone=62895355578090&text=Halo,%20mo%20ba%20pesan%20bagimana%20kang?"
+                    title="0895 3555 78090"
                     icon={<i className="lab la-whatsapp text-4xl" />}
                     available={true}
                   />
@@ -91,7 +91,7 @@ const Mapalus = () => {
                       </div>
                       <div>
                         <div className="text-left text-lg">
-                          150+ Bahan Pasar
+                          200+ Bahan Pasar
                         </div>
                       </div>
                     </div>
