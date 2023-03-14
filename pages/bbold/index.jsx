@@ -44,7 +44,7 @@ export default function Page() {
           dynamicBullets: false,
           renderBullet: function (index, className) {
             if (index == 0) {
-              return `<div class="bg-[#372f2d] opacity-80 rounded-full mr-auto ml-4 text-center flex justify-center items-center ${labelClassName}">
+              return `<div class="bg-[#372f2d] opacity-80 cursor-default rounded-full mr-auto ml-4 text-center flex justify-center items-center ${labelClassName}">
               <span class="font-lemon text-xl drop-shadow-lg">${label}</span></div>`;
             }
             return "";
@@ -57,7 +57,7 @@ export default function Page() {
         loop={true}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        className={"mySwiper h-full w-full " + className}
+        className={"mySwiper h-full w-full cursor-pointer " + className}
       >
         {children}
       </Swiper>
