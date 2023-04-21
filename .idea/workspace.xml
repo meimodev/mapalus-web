@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="added /fourever page">
-      <change afterPath="$PROJECT_DIR$/pages/fourever/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/fourever/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/fourever/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1679063700462" duration="617000" />
       <workItem from="1679296445888" duration="22000" />
       <workItem from="1679296477186" duration="30000" />
-      <workItem from="1681995278985" duration="12992000" />
+      <workItem from="1681995278985" duration="13335000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -168,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652409449813</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added /fourever page">
+      <created>1682040410656</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682040410656</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

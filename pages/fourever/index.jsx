@@ -91,7 +91,7 @@ export default function Fourever() {
 
                 <section className="text-4xl" style={primaryFontFamily}>
                     <h1 className="z-10">Fourever Gift</h1>
-                    <img src={imageUrlList[6]} className="h-auto w-28 rotate-6 absolute left-0 top-0 " alt="frame"/>
+                    <img src={imageUrlList[6]} className="h-auto w-28  absolute left-0 top-0 " alt="frame"/>
                 </section>
                 <Fade cascade damping={0.75} triggerOnce className="flex flex-col gap-10 py-6 0 relative">
 
@@ -132,7 +132,7 @@ export default function Fourever() {
                         description={"Ucapkan rasa syukur anda dengan acrylic fourever gift"}
                         price={"Rp. 150.000"}
                         decoration={
-                            <img src={imageUrlList[6]} className="h-auto w-28 absolute -right-1 -bottom-10 -rotate-6" alt="frame"/>
+                            <img src={imageUrlList[6]} className="h-auto w-28 absolute -right-1 -bottom-10 " alt="frame"/>
                         }
                     />
 
@@ -142,7 +142,7 @@ export default function Fourever() {
                         <div style={secondaryFontFamily} className="text-4xl pb-3">
                             Fourever Gift
                         </div>
-                        <div style={thirtiaryFontFamily} className="w-3/4 flex flex-col">
+                        <Fade cascade style={thirtiaryFontFamily} className="w-3/4 flex flex-col max-w-xs">
                             <_ClosingListItem title="Wawalitouan, Tondano"
                                               icon={<i className="las la-map-marker text-lg"/>}/>
                             <_ClosingListItem title="@fourevergiftshop"
@@ -152,7 +152,7 @@ export default function Fourever() {
                             <_ClosingListItem title="0812 1234 1234"
                                               icon={<i className="lab la-whatsapp text-lg"/>}/>
 
-                        </div>
+                        </Fade>
                     </div>
                 </section>
                 {/*<section className="py-6">*/}
