@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fixed alteration of /fourever page" />
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix error, no key props in iterated element" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +82,7 @@
       <workItem from="1681995278985" duration="13553000" />
       <workItem from="1682045596894" duration="5444000" />
       <workItem from="1682132984583" duration="44000" />
+      <workItem from="1682133073992" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682133021358</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix error, no key props in iterated element">
+      <created>1682133178535</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682133178536</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +258,7 @@
     <MESSAGE value="altered /fourever page" />
     <MESSAGE value="second alteration of /fourever page" />
     <MESSAGE value="fixed alteration of /fourever page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed alteration of /fourever page" />
+    <MESSAGE value="fix error, no key props in iterated element" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix error, no key props in iterated element" />
   </component>
 </project>
