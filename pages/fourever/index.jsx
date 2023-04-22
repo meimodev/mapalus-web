@@ -52,7 +52,7 @@ export default function Fourever() {
                     {title}
                 </h4>
                 <div style={thirtiaryFontFamily} className="text-xs text-slate-400">
-                    {description.map(e => <div>{e}</div>)}
+                    {description.map(e => <div key={e}>{e}</div>)}
                 </div>
                 <div className="font-bold py-1">
                     {price}
