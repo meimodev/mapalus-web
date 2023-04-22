@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="altered /fourever page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/fourever/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/fourever/index.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="second alteration of /fourever page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +80,7 @@
       <workItem from="1679296445888" duration="22000" />
       <workItem from="1679296477186" duration="30000" />
       <workItem from="1681995278985" duration="13553000" />
-      <workItem from="1682045596894" duration="4825000" />
+      <workItem from="1682045596894" duration="5444000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -183,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682040752793</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="second alteration of /fourever page">
+      <created>1682073288577</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682073288577</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +240,7 @@
     <MESSAGE value="added /privacy-policy to complaint the apps in each respective store" />
     <MESSAGE value="added /fourever page" />
     <MESSAGE value="altered /fourever page" />
-    <option name="LAST_COMMIT_MESSAGE" value="altered /fourever page" />
+    <MESSAGE value="second alteration of /fourever page" />
+    <option name="LAST_COMMIT_MESSAGE" value="second alteration of /fourever page" />
   </component>
 </project>
