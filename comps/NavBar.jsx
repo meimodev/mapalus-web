@@ -2,10 +2,10 @@
 import ButtonBack from "./ButtonBack";
 import Image from "next/image";
 
-const NavBar = ({ backHref, navBarClassName }) => (
+const NavBar = ({ backHref, navBarClassName, buttonClassName }) => (
   <div className={"fixed w-full px-6 py-3 z-50 " + navBarClassName}>
     <div className="flex justify-between">
-      <ButtonBack href={backHref} />
+      <ButtonBack href={backHref} buttonClassName={buttonClassName} />
       <img
         src="/itaewon_logo.png"
         className="h-16 bg-no-repeat bg-cover"
