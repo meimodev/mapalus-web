@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Meta from "../../comps/Meta";
-import ListItemButton from "../../comps/ListItemButton";
 import FooterDefault from "../../comps/FooterDefault";
 import {Fade} from "react-awesome-reveal";
 import Link from "next/link";

@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import ButtonBack from "./ButtonBack";
-import Image from "next/image";
 
 const NavBar = ({ backHref, navBarClassName, buttonClassName }) => (
   <div className={"fixed w-full px-6 py-3 z-50 " + navBarClassName}>
