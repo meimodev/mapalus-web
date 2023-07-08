@@ -50,7 +50,7 @@ export default function Page() {
                     <section>
                         <div className="text-center pt-6 pb-6 text-4xl font-bold tracking-widest">
 
-                            UNCLE'S BURGERBAR
+                            UNCLE&apos;S BURGERBAR
                         </div>
                     </section>
 
