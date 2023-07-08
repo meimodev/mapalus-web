@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="First iteration of added  trinity clean-and-care page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comps/ButtonBack.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/comps/ButtonBack.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comps/ListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/comps/ListItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comps/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/comps/NavBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/meimo/OneDrive/Desktop/Projects-temp/mapalus-web/pages/trinity-clean-and-care",
+    "last_opened_file_path": "C:/Users/meimo/OneDrive/Desktop/Projects-temp/mapalus-web/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,9 +52,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages\trinity-clean-and-care" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\comps" />
-      <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages\fourever" />
       <recent name="C:\Users\User\WebstormProjects\mapalus-web\pages\privacy" />
     </key>
@@ -91,6 +88,8 @@
       <workItem from="1682133073992" duration="122000" />
       <workItem from="1682135642527" duration="155000" />
       <workItem from="1687742326737" duration="10192000" />
+      <workItem from="1687769281523" duration="349000" />
+      <workItem from="1688785565566" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -218,7 +217,23 @@
       <option name="project" value="LOCAL" />
       <updated>1682135702413</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="First iteration of added  trinity clean-and-care page">
+      <option name="closed" value="true" />
+      <created>1687769399235</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687769399235</updated>
+    </task>
+    <task id="LOCAL-00020" summary="First iteration of added  trinity clean-and-care page">
+      <option name="closed" value="true" />
+      <created>1687769420178</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687769420178</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +289,7 @@
     <MESSAGE value="second alteration of /fourever page" />
     <MESSAGE value="fixed alteration of /fourever page" />
     <MESSAGE value="fix error, no key props in iterated element" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error, no key props in iterated element" />
+    <MESSAGE value="First iteration of added  trinity clean-and-care page" />
+    <option name="LAST_COMMIT_MESSAGE" value="First iteration of added  trinity clean-and-care page" />
   </component>
 </project>
