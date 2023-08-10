@@ -130,7 +130,7 @@ export default function Page() {
                             }
                         />
                         <_buildListItem
-                            title={"BAUGHTY BY TRUFFLE"}
+                            title={"NAUGHTY BY TRUFFLE"}
                             price={"70"}
                             ltr={true}
                             desc={
