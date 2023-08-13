@@ -31,7 +31,7 @@ export default function Page() {
                 </div>
                 <Fade cascade triggerOnce>
                     {images.map((e,i)=>
-                        <div key={e} className="border-l-2 border-r-2 border-stone-400 px-6 mb-10">
+                        <div key={e} className="mb-10">
 
                         <img  alt="image" src={images[i]} />
                         </div>
