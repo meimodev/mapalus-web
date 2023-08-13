@@ -26,8 +26,8 @@ export default function Page() {
             />
 
             <div className="max-w-lg mx-auto px-6 py-6">
-                <div className="text-center text-xl text-stone-400 pb-6 font-thin">
-                    Activid <br/>x<br/> BPPD Minahasa 2023
+                <div className="text-center text-xl text-stone-400 pb-3 font-thin">
+                    Activid
                 </div>
                 <Fade cascade triggerOnce>
                     {images.map((e,i)=>
