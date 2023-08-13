@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="added uncle burgerbar with proper menu">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix typo on uncles burgerbar page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/unclesburgerbar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/unclesburgerbar/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
   <component name="ProjectId" id="26VxwbmzsiFA1v1nmw0cbFVhdJz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -41,7 +44,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/meimo/OneDrive/Desktop/Projects-temp/mapalus-web/pages",
+    "last_opened_file_path": "/Users/ivanrumimpunu/WebstormProjects/mapalus-web/pages/activid-bppd",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,11 +56,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/activid-bppd" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages\trinity-clean-and-care" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\comps" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages\fourever" />
-      <recent name="C:\Users\User\WebstormProjects\mapalus-web\pages\privacy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\mapalus-web\comps" />
@@ -93,6 +96,7 @@
       <workItem from="1688785565566" duration="404000" />
       <workItem from="1688788926754" duration="4138000" />
       <workItem from="1688793705407" duration="976000" />
+      <workItem from="1691663437918" duration="1894000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -252,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688793107170</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix typo on uncles burgerbar page">
+      <option name="closed" value="true" />
+      <created>1691663514613</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1691663514613</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +323,7 @@
     <MESSAGE value="First iteration of added  trinity clean-and-care page" />
     <MESSAGE value="added uncles burger bar page with at least the qr code is scannable" />
     <MESSAGE value="added uncle burgerbar with proper menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added uncle burgerbar with proper menu" />
+    <MESSAGE value="fix typo on uncles burgerbar page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix typo on uncles burgerbar page" />
   </component>
 </project>
