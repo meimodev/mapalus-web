@@ -131,13 +131,13 @@ export default function Page() {
                         />
                         <_buildListItem
                             title={"NAUGHTY BY TRUFFLE"}
-                            price={"70"}
+                            price={"75"}
                             ltr={true}
                             desc={
                                 <div>
                                     <div>Truffle aioli</div>
                                     <div>beef patty, beef belly bacon</div>
-                                    <div>sautee mushroom</div>
+                                    {/*<div>sautee mushroom</div>*/}
                                 </div>
                             }
                         />
