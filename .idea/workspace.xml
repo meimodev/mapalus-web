@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="alter2 activid-bppd page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="update unclesburgerbar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +23,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="26VxwbmzsiFA1v1nmw0cbFVhdJz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -97,6 +95,7 @@
       <workItem from="1688793705407" duration="976000" />
       <workItem from="1691663437918" duration="2121000" />
       <workItem from="1691916639462" duration="221000" />
+      <workItem from="1692185435399" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -288,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691916944168</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update unclesburgerbar">
+      <option name="closed" value="true" />
+      <created>1692186236115</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1692186236116</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +358,7 @@
     <MESSAGE value="added activid-bppd page" />
     <MESSAGE value="alter activid-bppd page" />
     <MESSAGE value="alter2 activid-bppd page" />
-    <option name="LAST_COMMIT_MESSAGE" value="alter2 activid-bppd page" />
+    <MESSAGE value="update unclesburgerbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="update unclesburgerbar" />
   </component>
 </project>

@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import ListItemButton from "../../comps/ListItemButton";
 import FooterDefault from "../../comps/FooterDefault";
 import { Fade } from "react-awesome-reveal";
 import Meta from "../../comps/Meta";
@@ -107,7 +106,8 @@ export default function Page() {
                         <_buildListItem item="Red Velpresso" price="27 / 32" />
                         <_buildListItem item="Caramello" price="27 / 32" />
                         <_buildListItem item="Vanilla Latte" price="27 / 32" />
-                        <_buildListItem item="Cafe Bonbon" price="20 / 22" />
+                        <_buildListItem item="Cafe Bonbon Single (Soft)" price="16 / 20" />
+                        <_buildListItem item="Cafe Bonbon Double " price="20 / 24" />
                       </CollapsibleDiv>
 
                       <CollapsibleDiv
