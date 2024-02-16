@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="update unclesburgerbar" />
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="update unclesburgerbar">
+      <change beforePath="$PROJECT_DIR$/.idea/mapalus-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mapalus-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/activid/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/activid/index.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +25,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -51,6 +57,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages/activid-bppd" />
@@ -96,6 +111,7 @@
       <workItem from="1691663437918" duration="2121000" />
       <workItem from="1691916639462" duration="221000" />
       <workItem from="1692185435399" duration="454000" />
+      <workItem from="1708089661469" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
