@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="update activid images files">
-      <change beforePath="$PROJECT_DIR$/pages/bbold/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bbold/index.jsx" afterDir="false" />
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="add another missing bbold images">
+      <change beforePath="$PROJECT_DIR$/pages/bbold/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bbold/[id].jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708090287301</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add another missing bbold images">
+      <option name="closed" value="true" />
+      <created>1709174715549</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1709174715549</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +392,7 @@
     <MESSAGE value="alter2 activid-bppd page" />
     <MESSAGE value="update unclesburgerbar" />
     <MESSAGE value="update activid images files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update activid images files" />
+    <MESSAGE value="add another missing bbold images" />
+    <option name="LAST_COMMIT_MESSAGE" value="add another missing bbold images" />
   </component>
 </project>
