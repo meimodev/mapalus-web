@@ -18,7 +18,7 @@ export default function Pages() {
       randomIndex;
 
     // While there remain elements to shuffle.
-    while (currentIndex != 0) {
+    while (currentIndex !== 0) {
       // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
@@ -295,9 +295,9 @@ export default function Pages() {
             ID Card PVC (2 sisi) (5.4cm x 8.5cm)
           </span>
           <ul>
-            <li>Rp 20.000 1 - 20pcs</li>
-            <li>Rp 19.000 21 - 600pcs</li>
-            <li>Rp 18.000 61 - 150pcs</li>
+            <li>Rp 18.000 1 - 20pcs</li>
+            <li>Rp 17.000 21 - 600pcs</li>
+            <li>Rp 15.000 61 - 150pcs</li>
             <li>&gt; 150pcs (Nego) 😁</li>
           </ul>
         </div>

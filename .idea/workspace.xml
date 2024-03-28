@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="add another missing bbold images">
-      <change beforePath="$PROJECT_DIR$/pages/bbold/[id].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bbold/[id].jsx" afterDir="false" />
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix bbold page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709174715549</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix bbold page">
+      <option name="closed" value="true" />
+      <created>1709176438459</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1709176438459</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +401,7 @@
     <MESSAGE value="update unclesburgerbar" />
     <MESSAGE value="update activid images files" />
     <MESSAGE value="add another missing bbold images" />
-    <option name="LAST_COMMIT_MESSAGE" value="add another missing bbold images" />
+    <MESSAGE value="fix bbold page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bbold page" />
   </component>
 </project>
