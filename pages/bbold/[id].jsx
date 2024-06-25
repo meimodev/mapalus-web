@@ -254,11 +254,11 @@ export default function Pages() {
           <span>Size C2 ( 91cm x 42cm )</span>
           <span>Rp 390.000</span>
         </div>
-        <div className="py-4">
-          <div className="text-xl font-lemon text-amber-400">
-            ! order 1pcs size C1 / C2, Gratis 2pcs size B1
-          </div>
-        </div>
+        {/*<div className="py-4">*/}
+        {/*  <div className="text-xl font-lemon text-amber-400">*/}
+        {/*    ! order 1pcs size C1 / C2, Gratis 2pcs size B1*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <div className="flex flex-col text-xs">
           <em>- Waktu pekerjaan size C, memakan 🍜 waktu ⏰ 2 - 3 hari</em>
           <em>- Waktu pekerjaan terhitung setelah design terkonfirmasi</em>

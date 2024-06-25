@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix bbold page">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +112,8 @@
       <workItem from="1691916639462" duration="221000" />
       <workItem from="1692185435399" duration="454000" />
       <workItem from="1708089661469" duration="645000" />
+      <workItem from="1711618585096" duration="187000" />
+      <workItem from="1712039504342" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -335,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709176438459</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="adjust bbold page">
+      <option name="closed" value="true" />
+      <created>1711618755981</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1711618755981</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +412,7 @@
     <MESSAGE value="update activid images files" />
     <MESSAGE value="add another missing bbold images" />
     <MESSAGE value="fix bbold page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bbold page" />
+    <MESSAGE value="adjust bbold page" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust bbold page" />
   </component>
 </project>
