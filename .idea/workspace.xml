@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page, remove promo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "meimodev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/meimodev/mapalus-web",
+    "accountId": "70331e1e-0fea-4bfa-8533-1b745101e8da"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -79,6 +89,13 @@
       <recent name="C:\Users\User\WebstormProjects\mapalus-web\comps\itaewon" />
     </key>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,6 +131,7 @@
       <workItem from="1708089661469" duration="645000" />
       <workItem from="1711618585096" duration="187000" />
       <workItem from="1712039504342" duration="18000" />
+      <workItem from="1719316656598" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -413,6 +431,7 @@
     <MESSAGE value="add another missing bbold images" />
     <MESSAGE value="fix bbold page" />
     <MESSAGE value="adjust bbold page" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust bbold page" />
+    <MESSAGE value="adjust bbold page, remove promo" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust bbold page, remove promo" />
   </component>
 </project>

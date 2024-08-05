@@ -296,7 +296,7 @@ export default function Pages() {
           </span>
           <ul>
             <li>Rp 18.000 1 - 20pcs</li>
-            <li>Rp 17.000 21 - 600pcs</li>
+            <li>Rp 17.000 21 - 60pcs</li>
             <li>Rp 15.000 61 - 150pcs</li>
             <li>&gt; 150pcs (Nego) 😁</li>
           </ul>
