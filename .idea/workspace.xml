@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page, remove promo">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page, update price 2025">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,7 @@
       <workItem from="1711618585096" duration="187000" />
       <workItem from="1712039504342" duration="18000" />
       <workItem from="1719316656598" duration="280000" />
-      <workItem from="1735999739742" duration="663000" />
+      <workItem from="1735999739742" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -368,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711618755981</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="adjust bbold page, update price 2025">
+      <option name="closed" value="true" />
+      <created>1736000580732</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1736000580732</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +446,7 @@
     <MESSAGE value="fix bbold page" />
     <MESSAGE value="adjust bbold page" />
     <MESSAGE value="adjust bbold page, remove promo" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust bbold page, remove promo" />
+    <MESSAGE value="adjust bbold page, update price 2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust bbold page, update price 2025" />
   </component>
 </project>
