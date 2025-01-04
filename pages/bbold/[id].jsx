@@ -220,7 +220,7 @@ export default function Pages() {
         <div>Photo, Poster, Quotes</div>
         <div className="text-xl flex-col flex font-lemon text-neutral-100 py-2">
           <span>Size B2 ( 22.5cm x 30cm )</span>
-          <span>Rp 80.000</span>
+          <span>Rp 95.000</span>
         </div>
         <div className="flex flex-col text-xs">
           <em>- Penambahan tulisan, memakan 🍜 waktu ⏰ 1 - 2 hari</em>
@@ -234,7 +234,7 @@ export default function Pages() {
         <div>Photo, Poster, Quotes</div>
         <div className="text-xl flex-col flex font-lemon text-neutral-100 py-2">
           <span>Size B4 ( 30cm x 45cm )</span>
-          <span>Rp 160.000</span>
+          <span>Rp 190.000</span>
         </div>
         <div className="flex flex-col text-xs">
           <em>- Penambahan tulisan, memakan 🍜 waktu ⏰ 1 - 2 hari</em>
@@ -248,11 +248,11 @@ export default function Pages() {
         <div>Photo, Poster, Quotes</div>
         <div className="text-xl flex-col flex font-lemon text-neutral-100 py-2">
           <span>Size C1 ( 70cm x 47cm )</span>
-          <span>Rp 330.000</span>
+          <span>Rp 370.000</span>
         </div>
         <div className="text-xl flex-col flex font-lemon text-neutral-100 py-2">
           <span>Size C2 ( 91cm x 42cm )</span>
-          <span>Rp 390.000</span>
+          <span>Rp 440.000</span>
         </div>
         {/*<div className="py-4">*/}
         {/*  <div className="text-xl font-lemon text-amber-400">*/}
