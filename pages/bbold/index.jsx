@@ -317,6 +317,24 @@ export default function Page() {
                             <Fade cascade triggerOnce>
                                 <div className="h-[2rem]"></div>
 
+                                <div className="flex h-[22rem]">
+                                    <SwiperWrapper href={data[7].href} label={data[7].label}>
+                                        {data[7].images.map((e) => {
+                                            return (
+                                                <SwiperSlide
+                                                    key={e}
+                                                    style={{
+                                                        background: `url(${e})`,
+                                                        backgroundSize: "contain",
+                                                        backgroundRepeat: "no-repeat",
+                                                        backgroundPosition: "center",
+                                                    }}
+                                                ></SwiperSlide>
+                                            );
+                                        })}
+                                    </SwiperWrapper>
+                                </div>
+
                                 {/* Pin */}
                                 <div className="flex h-[13rem]">
                                     <SwiperWrapper href={data[9].href} label={data[9].label}>
@@ -371,52 +389,35 @@ export default function Page() {
                                     </SwiperWrapper>
                                 </div>
 
-                                <div className="flex h-[13rem]">
-                                    <SwiperWrapper href={data[0].href} label={data[0].label}>
-                                        {data[0].images.map((e) => {
-                                            return (
-                                                <SwiperSlide
-                                                    key={e}
-                                                    style={{
-                                                        background: `url(${e})`,
-                                                        backgroundSize: "cover",
-                                                    }}
-                                                ></SwiperSlide>
-                                            );
-                                        })}
-                                    </SwiperWrapper>
+                                {/*<div className="flex h-[13rem]">*/}
+                                {/*    <SwiperWrapper href={data[0].href} label={data[0].label}>*/}
+                                {/*        {data[0].images.map((e) => {*/}
+                                {/*            return (*/}
+                                {/*                <SwiperSlide*/}
+                                {/*                    key={e}*/}
+                                {/*                    style={{*/}
+                                {/*                        background: `url(${e})`,*/}
+                                {/*                        backgroundSize: "cover",*/}
+                                {/*                    }}*/}
+                                {/*                ></SwiperSlide>*/}
+                                {/*            );*/}
+                                {/*        })}*/}
+                                {/*    </SwiperWrapper>*/}
 
-                                    <SwiperWrapper href={data[6].href} label={data[6].label}>
-                                        {data[6].images.map((e) => {
-                                            return (
-                                                <SwiperSlide
-                                                    key={e}
-                                                    style={{
-                                                        background: `url(${e})`,
-                                                        backgroundSize: "cover",
-                                                    }}
-                                                ></SwiperSlide>
-                                            );
-                                        })}
-                                    </SwiperWrapper>
-                                </div>
-                                <div className="flex h-[22rem]">
-                                    <SwiperWrapper href={data[7].href} label={data[7].label}>
-                                        {data[7].images.map((e) => {
-                                            return (
-                                                <SwiperSlide
-                                                    key={e}
-                                                    style={{
-                                                        background: `url(${e})`,
-                                                        backgroundSize: "contain",
-                                                        backgroundRepeat: "no-repeat",
-                                                        backgroundPosition: "center",
-                                                    }}
-                                                ></SwiperSlide>
-                                            );
-                                        })}
-                                    </SwiperWrapper>
-                                </div>
+                                {/*    <SwiperWrapper href={data[6].href} label={data[6].label}>*/}
+                                {/*        {data[6].images.map((e) => {*/}
+                                {/*            return (*/}
+                                {/*                <SwiperSlide*/}
+                                {/*                    key={e}*/}
+                                {/*                    style={{*/}
+                                {/*                        background: `url(${e})`,*/}
+                                {/*                        backgroundSize: "cover",*/}
+                                {/*                    }}*/}
+                                {/*                ></SwiperSlide>*/}
+                                {/*            );*/}
+                                {/*        })}*/}
+                                {/*    </SwiperWrapper>*/}
+                                {/*</div>*/}
 
                                 <div className="flex h-[13rem]">
                                     <SwiperWrapper href={data[2].href} label={data[2].label}>
