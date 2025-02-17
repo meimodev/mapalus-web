@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page, update price 2025" />
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="adjust bbold page, update price 2025">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bbold/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bbold/index.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fe199e738d454309af93fcc73463a9265d416bf9" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -26,12 +34,12 @@
     &quot;assignee&quot;: &quot;meimodev&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/meimodev/mapalus-web.git",
-    "accountId": "0abaab88-a7cb-4d86-bd6a-771e16b78bf1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/meimodev/mapalus-web.git&quot;,
+    &quot;accountId&quot;: &quot;0abaab88-a7cb-4d86-bd6a-771e16b78bf1&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,7 +64,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "05a24585",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "/Users/ivanrumimpunu/WebstormProjects/mapalus-web/pages/activid-bppd",
     "node.js.detected.package.eslint": "true",

@@ -310,7 +310,8 @@ export default function Page() {
                     <div className="">
                         <div className="flex-col ">
                             <div className="pt-10 px-6">
-                                <img src="/bbold.png" alt="bbold logo"/>
+                                <img src="https://www.dropbox.com/scl/fi/i3yxgk5w4j4h93ovb1hta/valentine-bbold.gif?rlkey=vjvqwcwt8v7632g98xmyuwnlp&st=iz9r7e43&dl=1"
+                                     alt="bbold logo"/>
                             </div>
 
                             <Fade cascade triggerOnce>
