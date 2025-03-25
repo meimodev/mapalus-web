@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="change bbold main page title image">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="bbold adjust valentine promo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/bbold/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bbold/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="05a245859c5e65a86ad14d6da6dcc7195b248bc4" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +39,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/meimodev/mapalus-web.git&quot;,
-    &quot;accountId&quot;: &quot;0abaab88-a7cb-4d86-bd6a-771e16b78bf1&quot;
+    &quot;accountId&quot;: &quot;70331e1e-0fea-4bfa-8533-1b745101e8da&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -57,25 +59,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "working-bbold-page",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/ivanrumimpunu/WebstormProjects/mapalus-web/pages/activid-bppd",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;added-bol-bol-page&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/edotanod/WebstormProjects/mapalus-web/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/edotanod/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -87,11 +91,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/pages/activid-bppd" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages\trinity-clean-and-care" />
       <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\comps" />
-      <recent name="C:\Users\meimo\OneDrive\Desktop\Projects-temp\mapalus-web\pages\fourever" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\mapalus-web\comps" />
@@ -101,7 +105,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -142,6 +146,14 @@
       <workItem from="1712039504342" duration="18000" />
       <workItem from="1719316656598" duration="280000" />
       <workItem from="1735999739742" duration="1810000" />
+      <workItem from="1740477826230" duration="9845000" />
+      <workItem from="1740530262340" duration="86000" />
+      <workItem from="1740530364527" duration="21000" />
+      <workItem from="1740530419105" duration="11713000" />
+      <workItem from="1740632118687" duration="2665000" />
+      <workItem from="1741760198768" duration="2185000" />
+      <workItem from="1742856867350" duration="24000" />
+      <workItem from="1742886813708" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>

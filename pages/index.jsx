@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       window.location.assign("/mapalus");
-    }, 4000);
+    }, 6000);
   }, []);
 
   return (
@@ -30,7 +30,7 @@ export default function Home() {
 
               <div className="my-6">
                 <h1 className="text-gray-100 text-5xl text-center">
-                  Stay Tuned ! <br />
+                  Stay Tune ! <br />
                   Things are under construction
                 </h1>
               </div>
@@ -48,7 +48,7 @@ export default function Home() {
                 >
                   <div className="flex items-center justify-center gap-2 border bg-mapalus border-mapalus text-neutral-900 text-2xl p-4 rounded-xl">
                     <i className="lab la-whatsapp text-4xl " />
-                    <span>0895 3555 78090</span>
+                    <span>0895 0316 2551</span>
                   </div>
                 </a>
               </div>
