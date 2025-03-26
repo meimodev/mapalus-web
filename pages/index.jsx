@@ -48,7 +48,7 @@ export default function Home() {
                 >
                   <div className="flex items-center justify-center gap-2 border bg-mapalus border-mapalus text-neutral-900 text-2xl p-4 rounded-xl">
                     <i className="lab la-whatsapp text-4xl " />
-                    <span>0895 3555 78090</span>
+                    <span>0895 0316 2551</span>
                   </div>
                 </a>
               </div>
