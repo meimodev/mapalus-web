@@ -1,18 +1,50 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
+import dayjs from "dayjs";
 
-export default function BookingDialog({ isOpen, onClose, onSubmit, packages }) {
+export default function BookingDialog({isOpen, onClose, onSubmit, packages}) {
     const [startTime, setStartTime] = useState("");
     const [endTime, setEndTime] = useState("");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [note, setNote] = useState("");
-    const [date, setDate] = useState(new Date());
+    const [date, setDate] = useState("");
     const [selectedPackages, setSelectedPackages] = useState("");
 
     const handleSubmit = () => {
-        onSubmit({ startTime, endTime, name });
+        if (!date) {
+            alert("Please select a date");
+            return;
+        }
+        const selectedDate = dayjs(`${date}`).toDate();
+        if (!startTime || !endTime) {
+            alert("Please select a time range");
+            return;
+        }
+        const selectedStartTime = dayjs(`${date} ${startTime}`).toDate();
+        const selectedEndTime = dayjs(`${date} ${endTime}`).toDate();
+
+        const booking = {
+            "start": selectedStartTime,
+            "end": selectedEndTime,
+            name,
+            phone,
+            note,
+            "booking_timestamp": selectedDate,
+            "package": selectedPackages,
+        }
+        onSubmit(booking);
+        handleResetInput();
         onClose();
     };
+
+    const handleResetInput = () => {
+        setStartTime("");
+        setEndTime("");
+        setName("");
+        setPhone("");
+        setNote("");
+        setSelectedPackages("");
+    }
 
     if (!isOpen) return null;
 
@@ -28,7 +60,7 @@ export default function BookingDialog({ isOpen, onClose, onSubmit, packages }) {
                         type="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        className="p-2  bg-gray-800 rounded w-1/2 text-white"
+                        className="p-2 bg-gray-800 rounded w-1/2 text-white"
                     />
                 </div>
 
@@ -48,7 +80,7 @@ export default function BookingDialog({ isOpen, onClose, onSubmit, packages }) {
                             value={endTime}
                             onChange={(e) => setEndTime(e.target.value)}
                             className="p-2  bg-gray-800 rounded w-1/2 text-white"
-                      />
+                        />
                     </div>
                 </div>
 
@@ -106,19 +138,22 @@ export default function BookingDialog({ isOpen, onClose, onSubmit, packages }) {
                 </div>
 
                 {/* Submit and Cancel buttons */}
-                <div className="flex space-x-4 mt-4 justify-center">
+                <div className="flex gap-4 mt-4 justify-center items-center">
                     <button
                         onClick={onClose}
-                        className="px-6 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+                        className="px-6 py-2 bg-red-700 text-white rounded-2xl hover:bg-gray-600"
                     >
-                        Cancel
+                        X
                     </button>
-                    <button
-                        onClick={handleSubmit}
-                        className="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                    >
-                        Add Booking
-                    </button>
+                    {date && startTime && endTime && name && phone && selectedPackages ? (
+                        <button
+                            onClick={handleSubmit}
+                            className="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        >
+                            Add Booking
+                        </button>
+                    ) : <p className="text-xs">form not complete</p>}
+
                 </div>
             </div>
         </div>

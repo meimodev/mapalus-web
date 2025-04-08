@@ -86,12 +86,12 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                                     </div>
                                     <div className="flex-grow">
                                         <p className="text-sm text-gray-100">{obf(booking.name)} - {obf(booking.phone)}</p>
-                                        <p className="text-xs text-gray-300">{booking.note}</p>
+                                        <p className="text-xs text-gray-300">{isAdmin ? `${booking.package} |` : ""} {booking.note}</p>
                                     </div>
                                     {isAdmin ? <div className="">
                                         <button
                                             onClick={() => {
-                                                onCancelBooking(slot);
+                                                onCancelBooking(booking);
                                             }}
                                             className="font-bold bg-red-500 text-white px-4 py-2 rounded-2xl
                                                  hover:bg-blue-600 mt-2"
@@ -106,7 +106,7 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                         </div>
                     ))
                 ) : (
-                    <p className="text-sm text-gray-400">Tidak ada acara pada tanggal ini.</p>
+                    <p className="text-sm text-gray-400">Tidak ada booking.</p>
                 )}
                 <button
                     onClick={() => {

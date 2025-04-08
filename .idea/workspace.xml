@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="bbold adjust valentine promo">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="added bol bol waiting for maintenance page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bbold/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bbold/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/booking.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/booking.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +156,9 @@
       <workItem from="1741760198768" duration="2185000" />
       <workItem from="1742856867350" duration="24000" />
       <workItem from="1742886813708" duration="2458000" />
+      <workItem from="1743739559974" duration="126000" />
+      <workItem from="1743741670924" duration="836000" />
+      <workItem from="1744076053713" duration="12646000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
