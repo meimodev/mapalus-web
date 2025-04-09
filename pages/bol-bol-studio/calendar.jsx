@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, {useState} from "react";
 import dayjs from "dayjs";
 
@@ -31,6 +31,8 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
             const date = currentDate.date(day);
             const isToday = today.isSame(date, 'day');
             const isSelected = selected.isSame(date, 'day');
+
+            console.log({bookings});
 
             const dayBookings = bookings.filter(booking => dayjs(booking.start).isSame(date, 'day'));
 
