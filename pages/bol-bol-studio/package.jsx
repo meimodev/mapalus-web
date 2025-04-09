@@ -18,7 +18,7 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
             <p className="text-sm mb-4 italic">Silahkan pilih paket dasar</p>
             <div className="flex flex-col gap-4 rounded w-full">
 
-                {packages.map((p) => (
+                {packages && packages.map((p) => (
                     <button
                         key={p.id}
                         onClick={() => onSelectPackage(p)}
@@ -34,7 +34,7 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
                                 <div>
                                     maximal <span className="font-bold">{p.capacity} orang</span>
                                 </div>
-                                {p.notes && <div className='text-xs text-left'>{p.notes.map((note, index) => <div
+                                {p.notes && <div className='text-xs text-left'>{p.notes && p.notes.map((note, index) => <div
                                     key={index}>{note}</div>)}</div>}
                             </div>
 
@@ -54,7 +54,7 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
             <p className="text-sm italic mb-4">Tambahan diluar paket </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
-                {addsOn.map((addOn, index) => (
+                {addsOn && addsOn.map((addOn, index) => (
                     <div key={index} className="p-4  bg-gray-800 rounded-lg ">
                         <div className="flex items-center">
                             <div className="flex-grow text-xs">

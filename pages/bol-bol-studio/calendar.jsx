@@ -1,3 +1,4 @@
+"use client"
 import React, {useState} from "react";
 import dayjs from "dayjs";
 
@@ -59,7 +60,10 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
         const selectedDayBookings = bookings.filter(booking => dayjs(booking.start).isSame(selected, 'day'));
 
         const obf = (str) => {
-            if(isAdmin)return str;
+
+            if(!str) return "";
+
+            if (isAdmin) return str;
 
                 if (str.length > 4) {
                     return str.slice(0, -4) + '****'; // Censor the last 4 characters

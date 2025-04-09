@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="added bol bol waiting for maintenance page">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="added bol-bol studio booking page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/booking.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/booking.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" afterDir="false" />
     </list>
@@ -158,7 +157,7 @@
       <workItem from="1742886813708" duration="2458000" />
       <workItem from="1743739559974" duration="126000" />
       <workItem from="1743741670924" duration="836000" />
-      <workItem from="1744076053713" duration="12646000" />
+      <workItem from="1744076053713" duration="20615000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -414,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739752452234</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="added bol-bol studio booking page">
+      <option name="closed" value="true" />
+      <created>1744097756903</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1744097756903</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,6 +492,7 @@
     <MESSAGE value="adjust bbold page, remove promo" />
     <MESSAGE value="adjust bbold page, update price 2025" />
     <MESSAGE value="change bbold main page title image" />
-    <option name="LAST_COMMIT_MESSAGE" value="change bbold main page title image" />
+    <MESSAGE value="added bol-bol studio booking page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bol-bol studio booking page" />
   </component>
 </project>
