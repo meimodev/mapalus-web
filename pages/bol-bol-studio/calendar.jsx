@@ -1,6 +1,20 @@
-'use client'
 import React, {useState} from "react";
 import dayjs from "dayjs";
+
+const obf = (isAdmin, str) => {
+
+    if (!str) return "";
+
+    if (isAdmin) return str;
+
+    if (str.length > 4) {
+        return str.slice(0, -4) + '****'; // Censor the last 4 characters
+    } else if (str.length > 2) {
+        return str.slice(0, 2) + '****'; // Censor all but the first 2 characters
+    } else {
+        return str.slice(0, 2) + '****'; // If the string is too short, show only 2 characters
+    }
+}
 
 export default function CalendarView({bookings, isAdmin, onCancelBooking, onSelectDate, selectedDate}) {
     const [currentDate, setCurrentDate] = useState(dayjs());
@@ -32,15 +46,18 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
             const isToday = today.isSame(date, 'day');
             const isSelected = selected.isSame(date, 'day');
 
-            console.log({bookings});
+            let dayBookings = [];
 
-            const dayBookings = bookings.filter(booking => dayjs(booking.start).isSame(date, 'day'));
+            if (bookings) {
+                dayBookings = bookings.filter(booking => dayjs(booking.start).isSame(date, 'day'));
+            }
+
 
             days.push(
                 <div
                     key={day}
-                    className={`h-14 flex rounded-lg flex-col items-center justify-center   cursor-pointer 
-                    ${isSelected ? 'font-bold  bg-blue-500 ' : `${isToday ? 'font-bold  bg-gray-900 border-2 ' : ' border-gray-600 border bg-gray-800'} `}   
+                    className={`h-14 flex rounded-lg flex-col items-center justify-center   cursor-pointer
+                    ${isSelected ? 'font-bold  bg-blue-500 ' : `${isToday ? 'font-bold  bg-gray-900 border-2 ' : ' border-gray-600 border bg-gray-800'} `}
                     `}
                     onClick={() => {
                         setSelected(date);
@@ -59,58 +76,57 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
 
     const renderSelectedDateSlots = () => {
 
-        const selectedDayBookings = bookings.filter(booking => dayjs(booking.start).isSame(selected, 'day'));
 
-        const obf = (str) => {
+        // const selectedDayBookings =bookings.filter(booking => dayjs(booking.start).isSame(selected, 'day'));
+        let selectedDayBookings = [];
+        selectedDayBookings.push(bookings);
 
-            if(!str) return "";
-
-            if (isAdmin) return str;
-
-                if (str.length > 4) {
-                    return str.slice(0, -4) + '****'; // Censor the last 4 characters
-                } else if (str.length > 2) {
-                    return str.slice(0, 2) + '****'; // Censor all but the first 2 characters
-                } else {
-                    return str.slice(0, 2) + '****'; // If the string is too short, show only 2 characters
-                }
+        if(bookings){
+             selectedDayBookings =bookings.filter(booking => dayjs(booking.start).isSame(selected, 'day'));
         }
+
 
         return (
             <div className="mt-4">
                 <h3 className="text-lg font-bold mb-2">{selected.format("DD MMMM YYYY")}</h3>
                 {selectedDayBookings.length > 0 ? (
-                    selectedDayBookings.map((booking, index) => (
-                        <div key={index} className="mb-2">
-                            <div className="p-2 bg-gray-800 border border-gray-700 rounded mb-1">
-                                <div className="flex gap-3 justify-center items-center">
-                                    <div>
-                                        <div className="text-sm font-semibold">
-                                            <p>{dayjs(booking.start).format("HH:mm")}</p>
-                                            <p>{dayjs(booking.end).format("HH:mm")}</p>
+                    selectedDayBookings.map((booking, index) => {
+                        if(!booking){
+                            return <div key={index}></div>
+                        }
+                        const bookingName = booking.name;
+                        return (
+                            <div key={index} className="mb-2">
+                                <div className="p-2 bg-gray-800 border border-gray-700 rounded mb-1">
+                                    <div className="flex gap-3 justify-center items-center">
+                                        <div>
+                                            <div className="text-sm font-semibold">
+                                                 <p>{dayjs(booking.start).format("HH:mm")}</p>
+                                                <p>{dayjs(booking.end).format("HH:mm")}</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="flex-grow">
-                                        <p className="text-sm text-gray-100">{obf(booking.name)} - {obf(booking.phone)}</p>
-                                        <p className="text-xs text-gray-300">{isAdmin ? `${booking.package} |` : ""} {booking.note}</p>
-                                    </div>
-                                    {isAdmin ? <div className="">
-                                        <button
-                                            onClick={() => {
-                                                onCancelBooking(booking);
-                                            }}
-                                            className="font-bold bg-red-500 text-white px-4 py-2 rounded-2xl
-                                                 hover:bg-blue-600 mt-2"
-                                        >
-                                            Cancel
-                                        </button>
-                                    </div> : <></>}
+                                        <div className="flex-grow">
+                                            <p className="text-sm text-gray-100">{obf(isAdmin, bookingName)} </p>
+                                            <p className="text-xs text-gray-300">{isAdmin ? `${booking.package} |` : ""} {booking.note}</p>
+                                        </div>
+                                        {isAdmin ? <div className="">
+                                            <button
+                                                onClick={() => {
+                                                    onCancelBooking(booking);
+                                                }}
+                                                className="font-bold bg-red-500 text-white px-4 py-2 rounded-2xl
+                                                     hover:bg-blue-600 mt-2"
+                                            >
+                                                Cancel
+                                            </button>
+                                        </div> : <></>}
 
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))
+                        );
+                    })
                 ) : (
                     <p className="text-sm text-gray-400">Tidak ada booking.</p>
                 )}
@@ -181,4 +197,4 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
 
         </div>
     );
-};
+}

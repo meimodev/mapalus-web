@@ -64,6 +64,7 @@ export async function getServerSideProps({req, res}) {
     };
 }
 
+
 export default function Page({bookingsData, packagesData, accountsData, addsOnData}) {
 
     const carouselRef = useRef();

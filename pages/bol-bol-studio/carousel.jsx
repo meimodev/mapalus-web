@@ -1,4 +1,4 @@
-'use client'
+
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 // import App from "next/app";
 
@@ -70,7 +70,7 @@ const Carousel = forwardRef(({ children }, ref) => {
                     transform: `translateX(-${currentIndex * 100}%)`,
                 }}
             >
-                {children.map((child, index) => (
+                {children && children.map((child, index) => (
                     <div key={index} className="flex-shrink-0 w-full">
                         {child}
                     </div>

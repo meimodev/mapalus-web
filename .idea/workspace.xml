@@ -8,14 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/booking.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/carousel.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/finish.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +159,9 @@
       <workItem from="1742886813708" duration="2458000" />
       <workItem from="1743739559974" duration="126000" />
       <workItem from="1743741670924" duration="836000" />
-      <workItem from="1744076053713" duration="23240000" />
+      <workItem from="1744076053713" duration="28254000" />
+      <workItem from="1744262350582" duration="10118000" />
+      <workItem from="1744682179119" duration="7896000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -436,7 +433,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744168805457</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added bol-bol studio booking page">
+      <option name="closed" value="true" />
+      <created>1744171312489</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1744171312489</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
