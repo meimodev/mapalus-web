@@ -43,7 +43,7 @@ export default function Page() {
                 pagination={{
                     dynamicBullets: false,
                     renderBullet: function (index, className) {
-                        if (index == 0) {
+                        if (index === 0) {
                             return `<div class="bg-[#372f2d] opacity-80 cursor-default rounded-full mr-auto ml-4 text-center flex justify-center items-center ${labelClassName}">
               <span class="font-lemon text-xl drop-shadow-lg">${label}</span></div>`;
                         }
