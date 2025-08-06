@@ -16,19 +16,27 @@ const HomeView = ({onClickBooking}) => {
 
                     <div className="pt-12 font-bold">
                         <div className="text-5xl font-lemon">
-                            EVERYDAY
+                           OPEN EVERYDAY!
                         </div>
-                        <div className="text-xl">
-                            11:00 AM - 22:00 PM
+                        <div className="text-xl flex justify-center gap-2">
+                            <span>11:00 AM</span>
+                            <span className="text-xs font-thin font-mono">WITA</span>
+                            <span>-</span>
+                            <span>21:00 PM</span>
+                            <span className="text-xs font-thin font-mono">WITA</span>
                         </div>
                     </div>
 
-                    <div className="flex justify-around font-poppins pt-4 pb-4 font-bold">
-                        <a href="https://www.instagram.com/bolbol_studio" target="_blank" className='flex gap-1 items-center'>
-                            <img src="/logos/logo-instagram.svg" className="w-6 h-6" alt=""/>  @bolbol_studio
+                    <div className="flex justify-around font-poppins pt-4 pb-4 font-bold text-xs">
+                        <a href="https://www.instagram.com/bolbol_studio" target="_blank"
+                           className='flex gap-1 items-center'>
+                            <img src="/logos/logo-instagram.svg" className="w-4 h-4" alt=""/> @bolbol_studio
                         </a>
                         <a href="https://www.tiktok.com/" target="_blank" className='flex gap-1 items-center'>
-                            <img src="/logos/logo-tiktok.svg" className="w-6 h-6" alt=""/>  @bolbol_studio
+                            <img src="/logos/logo-tiktok.svg" className="w-4 h-4" alt=""/> @bolbol_studio
+                        </a>
+                        <a href="https://www.facebook.com/share/168ARZJr3N/?mibextid=wwXIfr" target="_blank" className='flex gap-1 items-center'>
+                            <img src="/logos/logo-facebook.svg" className="w-8 h-8" alt=""/> Bolbol Pss
                         </a>
 
                     </div>

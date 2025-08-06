@@ -13,7 +13,7 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
 
 
     return (
-        <div className="p-4 bg-gray-900 text-white">
+        <div className="p-4 bg-blue-800 text-white">
             <h2 className="text-2xl font-bold ">Pilih Paket</h2>
             <p className="text-sm mb-4 italic">Silahkan pilih paket dasar</p>
             <div className="flex flex-col gap-4 rounded w-full">
@@ -22,7 +22,7 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
                     <button
                         key={p.id}
                         onClick={() => onSelectPackage(p)}
-                        className="p-4 border border-gray-600 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 ">
+                        className="p-4 border border-gray-200 rounded-lg hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 ">
                         <div className='flex gap-3 items-center'>
                             <div className="min-w-[5rem] font-bold text-left">
                                 {p.name.toUpperCase()}

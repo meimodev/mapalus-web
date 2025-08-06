@@ -149,7 +149,7 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
         className=" border-b-2 text-gray-400 border-gray-800 py-2 rounded">{title}</div>;
 
     return (
-        <div className="p-4 bg-gray-900 text-white w-full">
+        <div className="p-4 bg-blue-800 text-white w-full">
 
             <div className="flex items-center justify-between mb-4">
                 <button

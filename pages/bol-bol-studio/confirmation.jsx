@@ -39,7 +39,7 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
     }
 
     return (
-        <div className="p-4 bg-gray-900 text-white w-full">
+        <div className="p-4 bg-blue-800 text-white w-full">
             <div className="mb-4">
                 <h2 className="text-2xl font-bold mb-4">Konfirmasi Pemesanan</h2>
             </div>
