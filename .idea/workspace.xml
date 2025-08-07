@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix bol-bol landing page, only the first page">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix bol-bol operation hour &amp; some colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/fourever/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/fourever/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +173,9 @@
       <workItem from="1745311483788" duration="3000" />
       <workItem from="1753761239903" duration="11431000" />
       <workItem from="1754040750465" duration="6470000" />
-      <workItem from="1754442733154" duration="944000" />
+      <workItem from="1754442733154" duration="1642000" />
+      <workItem from="1754480965260" duration="5235000" />
+      <workItem from="1754526255316" duration="9827000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -456,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754046346547</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fix bol-bol operation hour &amp; some colors">
+      <option name="closed" value="true" />
+      <created>1754443730610</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1754443730610</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added /privacy-policy to complaint the apps in each respective store" />
     <MESSAGE value="added /fourever page" />
     <MESSAGE value="altered /fourever page" />
     <MESSAGE value="second alteration of /fourever page" />
@@ -529,6 +535,7 @@
     <MESSAGE value="commit to mapalus web" />
     <MESSAGE value="fix bbold page regarding image not showing on safari" />
     <MESSAGE value="fix bol-bol landing page, only the first page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bol-bol landing page, only the first page" />
+    <MESSAGE value="fix bol-bol operation hour &amp; some colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bol-bol operation hour &amp; some colors" />
   </component>
 </project>
