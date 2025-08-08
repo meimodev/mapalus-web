@@ -129,7 +129,7 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                         );
                     })
                 ) : (
-                    <p className="font-lemon text-xs text-blue-50 pb-4">(¬_¬")</p>
+                    <p className="font-lemon text-xs text-blue-50 pb-4">(¬_¬&quot;)</p>
                 )}
                 <button
                     onClick={() => {
