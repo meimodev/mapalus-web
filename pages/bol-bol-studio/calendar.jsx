@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import dayjs from "dayjs";
+import {Strip} from "./package";
 
 const obf = (isAdmin, str) => {
 
@@ -56,14 +57,14 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
             days.push(
                 <div
                     key={day}
-                    className={`h-14 flex rounded-lg flex-col items-center justify-center   cursor-pointer
-                    ${isSelected ? 'font-bold  bg-blue-500 ' : `${isToday ? 'font-bold  bg-gray-900 border-2 ' : ' border-gray-600 border bg-gray-800'} `}
+                    className={`transition duration-200 hover:scale-90 h-14 flex rounded-lg flex-col items-center justify-center   cursor-pointer text-blue-800
+                    ${isSelected ? ' bg-blue-800 text-white border-white border-2' : `${isToday ? ' underline underline-offset-2 decoration-2 bg-white  text-blue-800' : ' border-blue-600 border bg-white'} `}
                     `}
                     onClick={() => {
                         setSelected(date);
                     }}
                 >
-                    <div className={"text-sm font-bold"}>{day}</div>
+                    <div className={"font-lemon"}>{day}</div>
                     {dayBookings.length > 0 && (
                         <div className="text-xs text-yellow-400 font-light">{dayBookings.length}</div>
                     )}
@@ -88,7 +89,7 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
 
         return (
             <div className="mt-4">
-                <h3 className="text-lg font-bold mb-2">{selected.format("DD MMMM YYYY")}</h3>
+                <h3 className="text-lg font-lemon mb-2">{selected.format("D MMMM YYYY")}</h3>
                 {selectedDayBookings.length > 0 ? (
                     selectedDayBookings.map((booking, index) => {
                         if(!booking){
@@ -128,49 +129,45 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                         );
                     })
                 ) : (
-                    <p className="text-sm text-gray-400">Tidak ada booking.</p>
+                    <p className="font-lemon text-xs text-blue-50 pb-4">(¬_¬")</p>
                 )}
                 <button
                     onClick={() => {
                         onSelectDate(selected.toDate());
                         setSelected(selected);
                     }}
-                    className="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-2"
+                    className="transition duration-200 w-full font-lemon bg-white text-blue-800 px-4 py-2 rounded-xl hover:bg-blue-800 hover:text-white border-2 focus:bg-blue-800 focus:text-white"
                 >
-                    Book
+                    Pesan Sekarang
                 </button>
-
-
             </div>
         );
     };
 
     const renderDayTitle = (title) => <div
-        className=" border-b-2 text-gray-400 border-gray-800 py-2 rounded">{title}</div>;
+        className="font-lemon border-b-2 text-xs text-blue-50 border-blue-200 py-2 rounded">{title}</div>;
 
     return (
         <div className="p-4 bg-blue-800 text-white w-full">
 
-            <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center justify-between mb-4 font-lemon">
                 <button
                     onClick={prevMonth}
-                    className="border border-blue-50 text-white px-4 py-2 rounded-full "
-
+                    className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white "
                 >
                     {"<"}
                 </button>
                 <div className="flex gap-2 items-center">
-                    <h2 className="text-xl font-bold">
+                    <h2 className="text-xl font-lemon">
                         {currentDate.format("MMMM")}
                     </h2>
-                    <p className="text-xs">
+                    <p className="text-xs font-lemon">
                         {currentDate.format("YYYY")}
                     </p>
                 </div>
                 <button
                     onClick={nextMonth}
-                    className="border border-blue-50 text-white px-4 py-2 rounded-full "
-                >
+                    className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white "                >
                     {">"}
                 </button>
             </div>
@@ -185,9 +182,11 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                 {renderDayTitle("Sab")}
             </div>
 
-            <div className="grid grid-cols-7 gap-3 mt-4 w-full">
+            <div className="grid grid-cols-7 gap-3 mt-4 w-full mb-4">
                 {renderDays()}
             </div>
+
+            <Strip length={90}/>
 
             {selected && (
                 <div className="mt-4 text-center">

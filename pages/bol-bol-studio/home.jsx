@@ -1,4 +1,5 @@
 import React from 'react';
+import {Strip} from "./package";
 
 const HomeView = ({onClickBooking}) => {
 
@@ -8,15 +9,20 @@ const HomeView = ({onClickBooking}) => {
             {/*<img src="https://ik.imagekit.io/geb6bfhmhx/bol-bol-studio/main.jpg?updatedAt=1754041084936" alt="main image"*/}
             {/*/>*/}
 
+
             <div
                 className=" bg-[url('https://ik.imagekit.io/geb6bfhmhx/bol-bol-studio/main.jpg?updatedAt=1754041084936')] w-full h-full mx-auto bg-contain bg-center bg-no-repeat relative">
 
+                <div className="absolute top-4 overflow-clip">
+                    <Strip length={96}/>
+                </div>
+
                 <div
-                    className="text-center bottom-24 left-0 right-0 absolute bg-gradient-to-t from-blue-800 via-blue-800 to-transparent ">
+                    className="text-center bottom-0 left-0 right-0 absolute bg-gradient-to-t from-blue-800 via-blue-800 to-transparent ">
 
                     <div className="pt-12 font-bold">
                         <div className="text-5xl font-lemon">
-                           OPEN EVERYDAY!
+                            OPEN EVERYDAY!
                         </div>
                         <div className="text-xl flex justify-center gap-2">
                             <span>11:00 AM</span>
@@ -35,7 +41,8 @@ const HomeView = ({onClickBooking}) => {
                         <a href="https://www.tiktok.com/" target="_blank" className='flex gap-1 items-center'>
                             <img src="/logos/logo-tiktok.svg" className="w-4 h-4" alt=""/> @bolbol_studio
                         </a>
-                        <a href="https://www.facebook.com/share/168ARZJr3N/?mibextid=wwXIfr" target="_blank" className='flex gap-1 items-center'>
+                        <a href="https://www.facebook.com/share/168ARZJr3N/?mibextid=wwXIfr" target="_blank"
+                           className='flex gap-1 items-center'>
                             <img src="/logos/logo-facebook.svg" className="w-8 h-8" alt=""/> Bolbol Pss
                         </a>
 
@@ -43,9 +50,14 @@ const HomeView = ({onClickBooking}) => {
 
                     <button
                         onClick={onClickBooking}
-                        className="text-blue-800 px-8 py-4 rounded-2xl bg-white mt-4 font-black">
-                        BOOK NOW
+                        className="text-blue-800 px-8 py-4 rounded-2xl bg-white mt-4 font-lemon ">
+                        Pesan Sekarang
                     </button>
+                    <div className="my-4">
+
+                        <Strip length={97}/>
+                    </div>
+
 
                 </div>
             </div>
