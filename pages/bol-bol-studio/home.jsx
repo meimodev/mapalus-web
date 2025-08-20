@@ -13,8 +13,8 @@ const HomeView = ({onClickBooking}) => {
             <div
                 className=" bg-[url('https://ik.imagekit.io/geb6bfhmhx/bol-bol-studio/main.jpg?updatedAt=1754041084936')] w-full h-full mx-auto bg-contain bg-center bg-no-repeat relative">
 
-                <div className="absolute top-4 overflow-clip">
-                    <Strip length={96}/>
+                <div className="absolute flex justify-center top-4 overflow-clip w-full left-0 right-0 ">
+                    <Strip length={115}/>
                 </div>
 
                 <div
@@ -53,11 +53,10 @@ const HomeView = ({onClickBooking}) => {
                         className="text-blue-800 px-8 py-4 rounded-2xl bg-white mt-4 font-lemon ">
                         Pesan Sekarang
                     </button>
-                    <div className="my-4">
 
-                        <Strip length={97}/>
+                    <div className="my-4 flex justify-center bottom-4 overflow-clip w-full left-0 right-0 ">
+                        <Strip length={115}/>
                     </div>
-
 
                 </div>
             </div>

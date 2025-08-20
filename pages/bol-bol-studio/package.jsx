@@ -24,17 +24,16 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
 
     return (
         <div className="p-4 bg-blue-800 text-white">
-            <div className="flex gap-6 overflow-clip justify-between">
-                <div className="grow-0">
+            <div className="flex gap-6 overflow-clip my-4 justify-between items-center ">
+                <div className="grow-1 w-full ">
                     <h2 className="text-2xl font-lemon ">Pilih Paket</h2>
-                    <p className="text-sm mb-4 italic font-american">Paket dasar dulu yaaa</p>
+                    <p className="text-sm italic font-american">Paket dasar dulu yaaa</p>
                 </div>
-
-                <div className="grow-1">
+                <div className="grow-0 overflow-clip  ">
                     <Strip length={51}/>
                 </div>
-
             </div>
+
             <div className="flex flex-col gap-4 rounded w-full">
 
                 {packages && packages.map((p) => (
@@ -68,12 +67,12 @@ const Package = ({packages, onSelectPackage, addsOn}) => {
 
             </div>
 
-            <div className="flex gap-6 overflow-clip my-4 justify-between">
-                <div className="grow-0 ">
+            <div className="flex gap-6 overflow-clip my-4 justify-between items-center ">
+                <div className="grow-1 w-full ">
                     <h2 className="text-2xl font-lemon ">TAMBAHAN</h2>
                     <p className="text-sm italic font-american">Kalo paket dasar kurang</p>
                 </div>
-                <div className="grow-1 ">
+                <div className="grow-0 overflow-clip  ">
                     <Strip length={51}/>
                 </div>
             </div>

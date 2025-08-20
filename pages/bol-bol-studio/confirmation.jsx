@@ -17,7 +17,6 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
     };
 
     const formatDate = (date) => {
-        console.log(date);
         const _date = dayjs(date);
         return _date.format(" DD MMMM YYYY");
     };
@@ -82,7 +81,9 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
                     />
                 </div>
 
-                <Strip length={90}/>
+                <div className=" flex justify-center  overflow-clip w-full">
+                    <Strip length={115}/>
+                </div>
 
                 <div className="flex flex-col space-y-2 ">
                     <label className="text-sm text-white">Rincian Pesanan</label>
@@ -124,14 +125,16 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
                     </div>
                 </div>
 
-                <Strip length={90}/>
+                <div className=" flex justify-center  overflow-clip w-full">
+                    <Strip length={115}/>
+                </div>
 
                 <div className={"py-4"}>
                     <button
                         onClick={handleConfirmOrder}
                         className="transition duration-200 w-full font-lemon bg-white text-blue-800 px-4 py-2 rounded-xl hover:bg-blue-800 hover:text-white border-2 focus:bg-blue-800 focus:text-white"
                     >
-                        Confirm Order
+                        Konfirmasi Pesanan
                     </button>
                 </div>
             </div>

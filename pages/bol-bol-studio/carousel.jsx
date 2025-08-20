@@ -62,7 +62,7 @@ const Carousel = forwardRef(({ children }, ref) => {
     }));
 
     return (
-        <div className="relative w-full overflow-hidden border border-gray-700 bg-gray-800">
+        <div className="relative w-full overflow-hidden border border-gray-700 bg-blue-800">
 
             <div
                 className="flex transition-transform duration-500"

@@ -58,15 +58,16 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                 <div
                     key={day}
                     className={`transition duration-200 hover:scale-90 h-14 flex rounded-lg flex-col items-center justify-center   cursor-pointer text-blue-800
-                    ${isSelected ? ' bg-blue-800 text-white border-white border-2' : `${isToday ? ' underline underline-offset-2 decoration-2 bg-white  text-blue-800' : ' border-blue-600 border bg-white'} `}
+                    ${isSelected ? ' bg-blue-800 text-white border-white border-2' : ` bg-white`}
                     `}
                     onClick={() => {
                         setSelected(date);
                     }}
                 >
-                    <div className={"font-lemon"}>{day}</div>
+                    <div
+                        className={`font-lemon ${isToday ? 'underline underline-offset-2 decoration-2' : ''}`}>{day}</div>
                     {dayBookings.length > 0 && (
-                        <div className="text-xs text-yellow-400 font-light">{dayBookings.length}</div>
+                        <div className={`text-xs text-blue-800 font-lemon ${isSelected ? 'text-white' : ''}`}>{dayBookings.length}</div>
                     )}
                 </div>
             );
@@ -82,8 +83,8 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
         let selectedDayBookings = [];
         selectedDayBookings.push(bookings);
 
-        if(bookings){
-             selectedDayBookings =bookings.filter(booking => dayjs(booking.start).isSame(selected, 'day'));
+        if (bookings) {
+            selectedDayBookings = bookings.filter(booking => dayjs(booking.start).isSame(selected, 'day'));
         }
 
 
@@ -92,23 +93,29 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                 <h3 className="text-lg font-lemon mb-2">{selected.format("D MMMM YYYY")}</h3>
                 {selectedDayBookings.length > 0 ? (
                     selectedDayBookings.map((booking, index) => {
-                        if(!booking){
+                        if (!booking) {
                             return <div key={index}></div>
                         }
                         const bookingName = booking.name;
                         return (
-                            <div key={index} className="mb-2">
-                                <div className="p-2 bg-gray-800 border border-gray-700 rounded mb-1">
-                                    <div className="flex gap-3 justify-center items-center">
+                            <div key={index} className="my-6">
+                                <div className="p-4  border-2 border-white rounded-xl my-4">
+                                    <div className="flex gap-3 justify-start items-center text-sm ">
                                         <div>
-                                            <div className="text-sm font-semibold">
-                                                 <p>{dayjs(booking.start).format("HH:mm")}</p>
+                                            <div className=" text-start">
+                                                <p>Start</p>
+                                                <p>End</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className="font-semibold text-start">
+                                                <p>{dayjs(booking.start).format("HH:mm")}</p>
                                                 <p>{dayjs(booking.end).format("HH:mm")}</p>
                                             </div>
                                         </div>
-                                        <div className="flex-grow">
-                                            <p className="text-sm text-gray-100">{obf(isAdmin, bookingName)} </p>
-                                            <p className="text-xs text-gray-300">{isAdmin ? `${booking.package} |` : ""} {booking.note}</p>
+                                        <div className="  text-start">
+                                            <p className=" text-gray-100">{obf(isAdmin, bookingName)} </p>
+                                            <p className="text-gray-300">{isAdmin ? `${booking.package} |` : ""} {booking.note}</p>
                                         </div>
                                         {isAdmin ? <div className="">
                                             <button
@@ -116,7 +123,7 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                                                     onCancelBooking(booking);
                                                 }}
                                                 className="font-bold bg-red-500 text-white px-4 py-2 rounded-2xl
-                                                     hover:bg-blue-600 mt-2"
+                                                     hover:bg-blue-500 mt-2"
                                             >
                                                 Cancel
                                             </button>
@@ -167,7 +174,7 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                 </div>
                 <button
                     onClick={nextMonth}
-                    className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white "                >
+                    className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white ">
                     {">"}
                 </button>
             </div>
@@ -186,7 +193,9 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
                 {renderDays()}
             </div>
 
-            <Strip length={90}/>
+            <div className="my-4 flex justify-center bottom-4 overflow-clip w-full left-0 right-0 ">
+                <Strip length={115}/>
+            </div>
 
             {selected && (
                 <div className="mt-4 text-center">

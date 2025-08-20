@@ -138,7 +138,7 @@ export default function Page({bookingsData, packagesData, accountsData, addsOnDa
     }
 
     const handleOpenWAorder = ({name, phone, date, "package" : pkg}) => {
-        const adminPhone="6289503162551";
+        const adminPhone="+6289503162551";
 
         const url = `https://api.whatsapp.com/send?phone=${adminPhone}&text=Bol-bol%20studio%2C%20%F0%9F%93%B7%20booking%20info%3A%0A%F0%9F%91%A4%20nama%3A%20${encodeURIComponent(name)}%0A%F0%9F%93%9E%20phone%3A%20${encodeURIComponent(phone)}%0A%F0%9F%93%85%20tanggal%20booking%3A%20${encodeURIComponent(date)}%0A%F0%9F%93%A6%20paket%3A%20${encodeURIComponent(pkg.name)}%0A%F0%9F%97%84%EF%B8%8F%20kapasitas%20paket%20%3A%20${encodeURIComponent(pkg.capacity)}%20orang%20%0A%F0%9F%91%8D%20--mohon%20menunggu%20konfirmasi%20admin--`;
         console.log(url)
@@ -151,7 +151,7 @@ export default function Page({bookingsData, packagesData, accountsData, addsOnDa
             <Meta
                 title="Bol-bol Studio"
                 description="Self photo studio, bebaskan ekspresimu untuk mengabadikan momen-momen terindah, gunakan gaya suka-sukamu di Bol-bol Studio."
-                color="#0545CE"
+                color="##1e40af"
             />
 
             <Fade cascade triggerOnce>
