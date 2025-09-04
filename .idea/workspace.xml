@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="fix bol-bol page 2">
+    <list default="true" id="3345023d-a283-4977-af4f-39b4011d9e88" name="Changes" comment="update on bol-bol page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/calendar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/confirmation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bol-bol-studio/package.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/fourever/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/fourever/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,31 +64,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.localhost:3000.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/Users/edotanod/WebstormProjects/mapalus-web/public/logos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.codeium.AppSettingsConfigurable",
-    "ts.external.directory.path": "/Users/edotanod/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:3000.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/edotanod/WebstormProjects/mapalus-web/public/logos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.codeium.AppSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/edotanod/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -192,7 +187,8 @@
       <workItem from="1754480965260" duration="5235000" />
       <workItem from="1754526255316" duration="41173000" />
       <workItem from="1755650469165" duration="171000" />
-      <workItem from="1755650658918" duration="5132000" />
+      <workItem from="1755650658918" duration="5643000" />
+      <workItem from="1756949778402" duration="2072000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1647599537675</created>
@@ -504,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754635293861</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update on bol-bol page">
+      <option name="closed" value="true" />
+      <created>1755659921090</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1755659921090</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +556,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed alteration of /fourever page" />
     <MESSAGE value="fix error, no key props in iterated element" />
     <MESSAGE value="First iteration of added  trinity clean-and-care page" />
     <MESSAGE value="added uncles burger bar page with at least the qr code is scannable" />
@@ -577,6 +580,7 @@
     <MESSAGE value="fix fourever page" />
     <MESSAGE value="fix bol-bol page" />
     <MESSAGE value="fix bol-bol page 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bol-bol page 2" />
+    <MESSAGE value="update on bol-bol page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update on bol-bol page" />
   </component>
 </project>

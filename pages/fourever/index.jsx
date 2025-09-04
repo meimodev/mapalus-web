@@ -44,14 +44,14 @@ export default function Fourever() {
     const thirdFontFamily = {fontFamily: "'Mukta', sans-serif"};
 
     const images = [
-        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/1.jpg?updatedAt=1754481074134",
-        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/2.jpg?updatedAt=1754481074008",
-        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/3.jpg?updatedAt=1754481074036",
-        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/4.jpg?updatedAt=1754481073919",
-        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/5.jpg?updatedAt=1754481073954",
+        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/1.jpg",
+        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/2.jpg",
+        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/3.jpg",
+        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/4.jpg",
+        "https://ik.imagekit.io/geb6bfhmhx/fourever/page/5.jpg",
     ]
 
-    // "https://ik.imagekit.io/geb6bfhmhx/fourever/page/order%20now.png?updatedAt=1754481073179",
+    // "https://ik.imagekit.io/geb6bfhmhx/fourever/page/order%20now.png",
 
 
     return (
