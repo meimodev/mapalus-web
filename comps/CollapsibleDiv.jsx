@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import useCollapse from "react-collapsed";
+import { useCollapse } from "react-collapsed";
 
 export default function CollapsibleDiv({
   isActive,
