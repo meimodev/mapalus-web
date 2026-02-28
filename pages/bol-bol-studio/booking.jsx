@@ -1,27 +1,47 @@
 import React, {useState} from "react";
 import dayjs from "dayjs";
 
-export default function BookingDialog({isOpen, onClose, onSubmit, packages}) {
-    const [startTime, setStartTime] = useState("");
-    const [endTime, setEndTime] = useState("");
+export default function BookingDialog({isOpen, onClose, onSubmit, packages, studioInfo}) {
+    const [bookingDate, setBookingDate] = useState(null);
+    const [startMinutes, setStartMinutes] = useState(null);
+    const [endMinutes, setEndMinutes] = useState(null);
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [note, setNote] = useState("");
-    const [date, setDate] = useState("");
     const [selectedPackages, setSelectedPackages] = useState("");
 
+    const openMinutes = studioInfo?.openingHours?.openMinutes;
+    const closeMinutes = studioInfo?.openingHours?.closeMinutes;
+
+    const toTimeLabel = (minutes) => {
+        if (typeof minutes !== "number") return "";
+        return dayjs().startOf("day").add(minutes, "minute").format("HH:mm");
+    }
+
+    const parseTimeToMinutes = (value) => {
+        if (!value) return null;
+        const [h, m] = value.split(":").map(Number);
+        if (!Number.isFinite(h) || !Number.isFinite(m)) return null;
+        return h * 60 + m;
+    }
+
     const handleSubmit = () => {
-        if (!date) {
+        if (!bookingDate) {
             alert("Please select a date");
             return;
         }
-        const selectedDate = dayjs(`${date}`).toDate();
-        if (!startTime || !endTime) {
+        if (typeof startMinutes !== "number" || typeof endMinutes !== "number") {
             alert("Please select a time range");
             return;
         }
-        const selectedStartTime = dayjs(`${date} ${startTime}`).toDate();
-        const selectedEndTime = dayjs(`${date} ${endTime}`).toDate();
+        if (endMinutes <= startMinutes) {
+            alert("End time must be after start time");
+            return;
+        }
+
+        const selectedDate = dayjs(bookingDate).toDate();
+        const selectedStartTime = dayjs(bookingDate).startOf("day").add(startMinutes, "minute").toDate();
+        const selectedEndTime = dayjs(bookingDate).startOf("day").add(endMinutes, "minute").toDate();
 
         const booking = {
             "start": selectedStartTime,
@@ -38,8 +58,9 @@ export default function BookingDialog({isOpen, onClose, onSubmit, packages}) {
     };
 
     const handleResetInput = () => {
-        setStartTime("");
-        setEndTime("");
+        setBookingDate(null);
+        setStartMinutes(null);
+        setEndMinutes(null);
         setName("");
         setPhone("");
         setNote("");
@@ -58,8 +79,11 @@ export default function BookingDialog({isOpen, onClose, onSubmit, packages}) {
                     {/*<label className="text-sm text-white">12 Februari 2025</label>*/}
                     <input
                         type="date"
-                        value={date}
-                        onChange={(e) => setDate(e.target.value)}
+                        value={bookingDate ? dayjs(bookingDate).format("YYYY-MM-DD") : ""}
+                        onChange={(e) => {
+                            const value = e.target.value;
+                            setBookingDate(value ? dayjs(value).toDate() : null);
+                        }}
                         className="p-2 bg-gray-800 rounded w-1/2 text-white"
                     />
                 </div>
@@ -70,15 +94,19 @@ export default function BookingDialog({isOpen, onClose, onSubmit, packages}) {
                     <div className="flex gap-4">
                         <input
                             type="time"
-                            value={startTime}
-                            onChange={(e) => setStartTime(e.target.value)}
+                            min={typeof openMinutes === "number" ? toTimeLabel(openMinutes) : undefined}
+                            max={typeof closeMinutes === "number" ? toTimeLabel(closeMinutes) : undefined}
+                            value={toTimeLabel(startMinutes)}
+                            onChange={(e) => setStartMinutes(parseTimeToMinutes(e.target.value))}
                             className="p-2  bg-gray-800 rounded w-1/2 text-white"
                         />
                         <span className="text-sm self-center  font-bold">to</span>
                         <input
                             type="time"
-                            value={endTime}
-                            onChange={(e) => setEndTime(e.target.value)}
+                            min={typeof openMinutes === "number" ? toTimeLabel(openMinutes) : undefined}
+                            max={typeof closeMinutes === "number" ? toTimeLabel(closeMinutes) : undefined}
+                            value={toTimeLabel(endMinutes)}
+                            onChange={(e) => setEndMinutes(parseTimeToMinutes(e.target.value))}
                             className="p-2  bg-gray-800 rounded w-1/2 text-white"
                         />
                     </div>
@@ -145,7 +173,7 @@ export default function BookingDialog({isOpen, onClose, onSubmit, packages}) {
                     >
                         X
                     </button>
-                    {date && startTime && endTime && name && phone && selectedPackages ? (
+                    {bookingDate && typeof startMinutes === "number" && typeof endMinutes === "number" && name && phone && selectedPackages ? (
                         <button
                             onClick={handleSubmit}
                             className="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"

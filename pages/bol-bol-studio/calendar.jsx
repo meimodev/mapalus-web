@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import dayjs from "dayjs";
+import {Fade} from "react-awesome-reveal";
 import {Strip} from "./package";
 
 const obf = (isAdmin, str) => {
@@ -20,6 +21,10 @@ const obf = (isAdmin, str) => {
 export default function CalendarView({bookings, isAdmin, onCancelBooking, onSelectDate, selectedDate}) {
     const [currentDate, setCurrentDate] = useState(dayjs());
     const [selected, setSelected] = useState(dayjs(selectedDate));
+
+    useEffect(() => {
+        setSelected(dayjs(selectedDate));
+    }, [selectedDate]);
 
 
     const today = dayjs();
@@ -157,50 +162,60 @@ export default function CalendarView({bookings, isAdmin, onCancelBooking, onSele
     return (
         <div className="p-4 bg-blue-800 text-white w-full">
 
-            <div className="flex items-center justify-between mb-4 font-lemon">
-                <button
-                    onClick={prevMonth}
-                    className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white "
-                >
-                    {"<"}
-                </button>
-                <div className="flex gap-2 items-center">
-                    <h2 className="text-xl font-lemon">
-                        {currentDate.format("MMMM")}
-                    </h2>
-                    <p className="text-xs font-lemon">
-                        {currentDate.format("YYYY")}
-                    </p>
+            <Fade direction="up" triggerOnce>
+                <div className="flex items-center justify-between mb-4 font-lemon">
+                    <button
+                        onClick={prevMonth}
+                        className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white "
+                    >
+                        {"<"}
+                    </button>
+                    <div className="flex gap-2 items-center">
+                        <h2 className="text-xl font-lemon">
+                            {currentDate.format("MMMM")}
+                        </h2>
+                        <p className="text-xs font-lemon">
+                            {currentDate.format("YYYY")}
+                        </p>
+                    </div>
+                    <button
+                        onClick={nextMonth}
+                        className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white ">
+                        {">"}
+                    </button>
                 </div>
-                <button
-                    onClick={nextMonth}
-                    className="border-2 bg-white text-blue-800 px-4 py-2 rounded-full hover:bg-blue-800 hover:text-white ">
-                    {">"}
-                </button>
-            </div>
+            </Fade>
 
-            <div className="grid grid-cols-7 gap-3 text-center text-sm ">
-                {renderDayTitle("Min")}
-                {renderDayTitle("Sen")}
-                {renderDayTitle("Sel")}
-                {renderDayTitle("Rab")}
-                {renderDayTitle("Kam")}
-                {renderDayTitle("Jum")}
-                {renderDayTitle("Sab")}
-            </div>
+            <Fade direction="up" triggerOnce>
+                <div className="grid grid-cols-7 gap-3 text-center text-sm ">
+                    {renderDayTitle("Min")}
+                    {renderDayTitle("Sen")}
+                    {renderDayTitle("Sel")}
+                    {renderDayTitle("Rab")}
+                    {renderDayTitle("Kam")}
+                    {renderDayTitle("Jum")}
+                    {renderDayTitle("Sab")}
+                </div>
+            </Fade>
 
-            <div className="grid grid-cols-7 gap-3 mt-4 w-full mb-4">
-                {renderDays()}
-            </div>
+            <Fade direction="up" triggerOnce>
+                <div className="grid grid-cols-7 gap-3 mt-4 w-full mb-4">
+                    {renderDays()}
+                </div>
+            </Fade>
 
-            <div className="my-4 flex justify-center bottom-4 overflow-clip w-full left-0 right-0 ">
-                <Strip length={115}/>
-            </div>
+            <Fade direction="up" triggerOnce>
+                <div className="my-4 flex justify-center bottom-4 overflow-clip w-full left-0 right-0 ">
+                    <Strip length={115}/>
+                </div>
+            </Fade>
 
             {selected && (
-                <div className="mt-4 text-center">
-                    {renderSelectedDateSlots()}
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className="mt-4 text-center">
+                        {renderSelectedDateSlots()}
+                    </div>
+                </Fade>
             )}
 
         </div>

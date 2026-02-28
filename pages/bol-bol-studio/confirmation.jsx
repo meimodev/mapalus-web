@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import dayjs from "dayjs";
+import {Fade} from "react-awesome-reveal";
 import {Strip} from "./package";
 
-export default function ConfirmationView({selectedDate, selectedPackage, onConfirmOrder}) {
+export default function ConfirmationView({studioInfo, selectedDateTime, selectedPackage, onConfirmOrder}) {
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     // const [duration, setDuration] = useState(5);
@@ -21,6 +22,11 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
         return _date.format(" DD MMMM YYYY");
     };
 
+    const formatTime = (date) => {
+        const tz = studioInfo?.timezoneLabel || "";
+        return `${dayjs(date).format("HH:mm")} ${tz}`.trim();
+    }
+
     const handleConfirmOrder = () => {
 
         const order = {
@@ -28,7 +34,7 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
             phone,
             instagram,
             package: selectedPackage,
-            date: formatDate(selectedDate),
+            dateTime: selectedDateTime,
         }
 
         onConfirmOrder(order);
@@ -40,65 +46,77 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
 
     return (
         <div className="p-4 bg-blue-800 text-white w-full font-lemon">
-            <div className="mb-4">
-                <h2 className="text-2xl  mb-4">Konfirmasi Pemesanan</h2>
-            </div>
+            <Fade direction="up" triggerOnce>
+                <div className="mb-4">
+                    <h2 className="text-2xl  mb-4">Konfirmasi Pemesanan</h2>
+                </div>
+            </Fade>
 
             <div className="space-y-4 font-lemon">
                 {/* Name Input */}
-                <div className="flex flex-col space-y-2 ">
-                    <label className="text-sm text-white">Atas Nama</label>
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        className="text-sm font-poppins p-2 bg-blue-50 border border-white rounded text-black focus:outline-6 focus:outline-blue-800 "
-                        placeholder="Untuk mempermudah pencarian dan pengiriman foto"
-                    />
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className="flex flex-col space-y-2 ">
+                        <label className="text-sm text-white">Atas Nama</label>
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            className="text-sm font-poppins p-2 bg-blue-50 border border-white rounded text-black focus:outline-6 focus:outline-blue-800 "
+                            placeholder="Untuk mempermudah pencarian dan pengiriman foto"
+                        />
+                    </div>
+                </Fade>
 
                 {/* Phone Number Input */}
-                <div className="flex flex-col space-y-2">
-                    <label className="text-sm text-white">Nomor Handphone aktif</label>
-                    <input
-                        type="text"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        className="text-sm font-poppins p-2 bg-blue-50 border border-white rounded text-black focus:outline-6 focus:outline-blue-800 "
-                        placeholder="Nomor HP WA / Telegram untuk pengiriman link foto"
-                    />
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className="flex flex-col space-y-2">
+                        <label className="text-sm text-white">Nomor Handphone aktif</label>
+                        <input
+                            type="text"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            className="text-sm font-poppins p-2 bg-blue-50 border border-white rounded text-black focus:outline-6 focus:outline-blue-800 "
+                            placeholder="Nomor HP WA / Telegram untuk pengiriman link foto"
+                        />
+                    </div>
+                </Fade>
 
                 {/* Instagram Input */}
-                <div className="flex flex-col space-y-2">
-                    <label className="text-sm text-white">Instagram Handler</label>
-                    <input
-                        type="instagram"
-                        value={instagram}
-                        onChange={(e) => setInstagram(e.target.value)}
-                        className="text-sm font-poppins p-2 bg-blue-50 border border-white rounded text-black focus:outline-6 focus:outline-blue-800 "
-                        placeholder="Untuk Tag, Follow-Followan, Promosi & Diskon "
-                    />
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className="flex flex-col space-y-2">
+                        <label className="text-sm text-white">Instagram Handler</label>
+                        <input
+                            type="instagram"
+                            value={instagram}
+                            onChange={(e) => setInstagram(e.target.value)}
+                            className="text-sm font-poppins p-2 bg-blue-50 border border-white rounded text-black focus:outline-6 focus:outline-blue-800 "
+                            placeholder="Untuk Tag, Follow-Followan, Promosi & Diskon "
+                        />
+                    </div>
+                </Fade>
 
-                <div className=" flex justify-center  overflow-clip w-full">
-                    <Strip length={115}/>
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className=" flex justify-center  overflow-clip w-full">
+                        <Strip length={115}/>
+                    </div>
+                </Fade>
 
-                <div className="flex flex-col space-y-2 ">
-                    <label className="text-sm text-white">Rincian Pesanan</label>
+                <Fade direction="up" triggerOnce>
+                    <div className="flex flex-col space-y-2 ">
+                        <label className="text-sm text-white">Rincian Pesanan</label>
 
-                    <div
-                        className={"flex flex-col   p-2 bg-white border border-blue-800 rounded-3xl text-blue-800 text-sm text-center font-american mx-6"}>
+                        <div
+                            className={"flex flex-col   p-2 bg-white border border-blue-800 rounded-3xl text-blue-800 text-sm text-center font-american mx-6"}>
 
                         {selectedPackage && (
                             <div className="flex flex-col">
                                 <label className=" font-lemon text-xl">Paket {selectedPackage.name}</label>
 
-                                {selectedDate && (
+                                {selectedDateTime && (
                                     <div>
-                                        {formatDate(selectedDate)}
-                                    </div>
+                                        <div>{formatDate(selectedDateTime)}</div>
+                                        <div>{formatTime(selectedDateTime)}</div>
+                                        </div>
                                 )}
 
                                 <div className="flex gap-1 justify-center ">
@@ -110,8 +128,8 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
 
                     </div>
 
-                    <div
-                        className={"flex flex-col text-blue-50 text-xs text-left pt-1"}>
+                        <div
+                            className={"flex flex-col text-blue-50 text-xs text-left pt-1"}>
 
                         <div className="flex gap-1">
                             <p className="text-center font-bold ">*</p>
@@ -122,21 +140,26 @@ export default function ConfirmationView({selectedDate, selectedPackage, onConfi
                             <p>Harga final akan dikonfirmasi admin bol-bol studio</p>
                         </div>
 
+                        </div>
                     </div>
-                </div>
+                </Fade>
 
-                <div className=" flex justify-center  overflow-clip w-full">
-                    <Strip length={115}/>
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className=" flex justify-center  overflow-clip w-full">
+                        <Strip length={115}/>
+                    </div>
+                </Fade>
 
-                <div className={"py-4"}>
-                    <button
-                        onClick={handleConfirmOrder}
-                        className="transition duration-200 w-full font-lemon bg-white text-blue-800 px-4 py-2 rounded-xl hover:bg-blue-800 hover:text-white border-2 focus:bg-blue-800 focus:text-white"
-                    >
-                        Konfirmasi Pesanan
-                    </button>
-                </div>
+                <Fade direction="up" triggerOnce>
+                    <div className={"py-4"}>
+                        <button
+                            onClick={handleConfirmOrder}
+                            className="transition duration-200 w-full font-lemon bg-white text-blue-800 px-4 py-2 rounded-xl hover:bg-blue-800 hover:text-white border-2 focus:bg-blue-800 focus:text-white active:scale-[0.99]"
+                        >
+                            Konfirmasi Pesanan
+                        </button>
+                    </div>
+                </Fade>
             </div>
         </div>
     );
